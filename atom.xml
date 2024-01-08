@@ -1146,29 +1146,6 @@
         <updated>2023-10-27T07:27:05.222Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
-        <title>VScode-常用配置</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
-        <content type="html">&lt;h1 id=&#34;vscode-常用配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode-常用配置&#34;&gt;#&lt;/a&gt; VScode - 常用配置&lt;/h1&gt;
-&lt;h2 id=&#34;一-vscode工作区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-vscode工作区&#34;&gt;#&lt;/a&gt; 一、VSCode 工作区&lt;/h2&gt;
-&lt;h3 id=&#34;1-创建工作区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-创建工作区&#34;&gt;#&lt;/a&gt; 1. 创建工作区&lt;/h3&gt;
-&lt;p&gt;首先，需要先关闭打开的工作区，在 &lt;code&gt;【文件】&lt;/code&gt; 中点击 &lt;code&gt;【关闭工作区】&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;而后，建立新的工作区文件，在 &lt;code&gt;【文件】&lt;/code&gt; 中点击 &lt;code&gt;【将工作区另存为】&lt;/code&gt; ，选择工作的文件夹目录，点击 &lt;code&gt;【确定】&lt;/code&gt; ，就会在选定的工作目录下，生成新的 &lt;code&gt;【workspace.code-workspace】&lt;/code&gt; 工作区文件，该文件保存了工作区的文件夹目录路径和本工作区的自定义设置等。此时，VSCode 使用的工作区即是这个新建的工作区。&lt;/p&gt;
-&lt;p&gt;由于工作区内还未添加内容，页面显示空白，需要在 &lt;code&gt;【资源管理器】&lt;/code&gt; 中添加文件夹到工作区，或者在 &lt;code&gt;【文件】&lt;/code&gt; 中选择 &lt;code&gt;【将文件夹添加到工作区】&lt;/code&gt; ，工作区不仅可以添加 &lt;code&gt;【workspace工作区文件】&lt;/code&gt; 所在目录下的文件或者文件夹，也可以添加其他目录的文件。完成添加之后，资源管理器中就会列出工作区内的文件夹目录，就可以开始进行开发工作了。&lt;/p&gt;
-&lt;h3 id=&#34;2-管理工作区文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-管理工作区文件&#34;&gt;#&lt;/a&gt; 2. 管理工作区文件&lt;/h3&gt;
-&lt;p&gt;添加文件夹后，显示的是文件夹下所有的文件和下一级文件夹，而在工作中，往往有许多东西不需要修改变动，或者无需关心显示，因此，我们可以把工作区中这些让显示显得冗余的文件和文件夹隐藏起来。&lt;br&gt;
-在工作区目录下，单击鼠标右键，使用 &lt;code&gt;【Ctrl+shift+P】&lt;/code&gt; 快捷键打开设置搜索栏搜索 &lt;code&gt;【settings】&lt;/code&gt; ，在下拉项中找到 &lt;code&gt;【首选项：打开工作区设置】&lt;/code&gt; ，或者选择 &lt;code&gt;【打开文件夹设置】&lt;/code&gt; ，都可进入文件夹、工作区或全局的设置界面。&lt;/p&gt;
-&lt;p&gt;然后在上方的搜索栏搜索 &lt;code&gt;【exclude】&lt;/code&gt; ，在 &lt;code&gt;【Files:exclude】&lt;/code&gt; 区域就可以开始添加隐藏的文件模式。 &lt;code&gt;【**/文件路径】&lt;/code&gt; 模式可隐藏指定路径的文件夹以及其中的文件，和 &lt;code&gt;【**/文件名.后缀】&lt;/code&gt; 或者 &lt;code&gt;【**/*.后缀】&lt;/code&gt; 模式可根据文件名称或者文件的后缀隐藏特定的文件。&lt;/p&gt;
-&lt;h2 id=&#34;vscode快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode快捷键&#34;&gt;#&lt;/a&gt; VSCode 快捷键&lt;/h2&gt;
-&lt;h3 id=&#34;1-注释快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-注释快捷键&#34;&gt;#&lt;/a&gt; 1. 注释快捷键&lt;/h3&gt;
-&lt;p&gt;VSCode 支持在多种语言中使用快捷键操作注释，建议使用 &lt;code&gt;【Ctrl+/】&lt;/code&gt; 快捷键，可以添加或取消 &lt;code&gt;【行注释】&lt;/code&gt; 。 &lt;code&gt;【Ctrl+K Ctrl+S】&lt;/code&gt; 也可以添加注释，但有些语言不支持该快捷方式取消注释。 &lt;code&gt;【块注释】&lt;/code&gt; 的添加快捷键是 &lt;code&gt;【Shift+Alt+A】&lt;/code&gt; ，但易与企业微信等软件的截图热键冲突。&lt;/p&gt;
-</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="VScode" scheme="https://yunian.top/categories/MyBlog/Tools/VScode/" />
-        <updated>2023-10-27T07:27:05.221Z</updated>
-    </entry>
-    <entry>
         <id>https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
         <title>Word-使用技巧</title>
         <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
@@ -1202,6 +1179,29 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
         <category term="Word" scheme="https://yunian.top/categories/MyBlog/Tools/Word/" />
+        <updated>2023-10-27T07:27:05.221Z</updated>
+    </entry>
+    <entry>
+        <id>https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</id>
+        <title>VScode-常用配置</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
+        <content type="html">&lt;h1 id=&#34;vscode-常用配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode-常用配置&#34;&gt;#&lt;/a&gt; VScode - 常用配置&lt;/h1&gt;
+&lt;h2 id=&#34;一-vscode工作区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-vscode工作区&#34;&gt;#&lt;/a&gt; 一、VSCode 工作区&lt;/h2&gt;
+&lt;h3 id=&#34;1-创建工作区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-创建工作区&#34;&gt;#&lt;/a&gt; 1. 创建工作区&lt;/h3&gt;
+&lt;p&gt;首先，需要先关闭打开的工作区，在 &lt;code&gt;【文件】&lt;/code&gt; 中点击 &lt;code&gt;【关闭工作区】&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;而后，建立新的工作区文件，在 &lt;code&gt;【文件】&lt;/code&gt; 中点击 &lt;code&gt;【将工作区另存为】&lt;/code&gt; ，选择工作的文件夹目录，点击 &lt;code&gt;【确定】&lt;/code&gt; ，就会在选定的工作目录下，生成新的 &lt;code&gt;【workspace.code-workspace】&lt;/code&gt; 工作区文件，该文件保存了工作区的文件夹目录路径和本工作区的自定义设置等。此时，VSCode 使用的工作区即是这个新建的工作区。&lt;/p&gt;
+&lt;p&gt;由于工作区内还未添加内容，页面显示空白，需要在 &lt;code&gt;【资源管理器】&lt;/code&gt; 中添加文件夹到工作区，或者在 &lt;code&gt;【文件】&lt;/code&gt; 中选择 &lt;code&gt;【将文件夹添加到工作区】&lt;/code&gt; ，工作区不仅可以添加 &lt;code&gt;【workspace工作区文件】&lt;/code&gt; 所在目录下的文件或者文件夹，也可以添加其他目录的文件。完成添加之后，资源管理器中就会列出工作区内的文件夹目录，就可以开始进行开发工作了。&lt;/p&gt;
+&lt;h3 id=&#34;2-管理工作区文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-管理工作区文件&#34;&gt;#&lt;/a&gt; 2. 管理工作区文件&lt;/h3&gt;
+&lt;p&gt;添加文件夹后，显示的是文件夹下所有的文件和下一级文件夹，而在工作中，往往有许多东西不需要修改变动，或者无需关心显示，因此，我们可以把工作区中这些让显示显得冗余的文件和文件夹隐藏起来。&lt;br&gt;
+在工作区目录下，单击鼠标右键，使用 &lt;code&gt;【Ctrl+shift+P】&lt;/code&gt; 快捷键打开设置搜索栏搜索 &lt;code&gt;【settings】&lt;/code&gt; ，在下拉项中找到 &lt;code&gt;【首选项：打开工作区设置】&lt;/code&gt; ，或者选择 &lt;code&gt;【打开文件夹设置】&lt;/code&gt; ，都可进入文件夹、工作区或全局的设置界面。&lt;/p&gt;
+&lt;p&gt;然后在上方的搜索栏搜索 &lt;code&gt;【exclude】&lt;/code&gt; ，在 &lt;code&gt;【Files:exclude】&lt;/code&gt; 区域就可以开始添加隐藏的文件模式。 &lt;code&gt;【**/文件路径】&lt;/code&gt; 模式可隐藏指定路径的文件夹以及其中的文件，和 &lt;code&gt;【**/文件名.后缀】&lt;/code&gt; 或者 &lt;code&gt;【**/*.后缀】&lt;/code&gt; 模式可根据文件名称或者文件的后缀隐藏特定的文件。&lt;/p&gt;
+&lt;h2 id=&#34;vscode快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode快捷键&#34;&gt;#&lt;/a&gt; VSCode 快捷键&lt;/h2&gt;
+&lt;h3 id=&#34;1-注释快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-注释快捷键&#34;&gt;#&lt;/a&gt; 1. 注释快捷键&lt;/h3&gt;
+&lt;p&gt;VSCode 支持在多种语言中使用快捷键操作注释，建议使用 &lt;code&gt;【Ctrl+/】&lt;/code&gt; 快捷键，可以添加或取消 &lt;code&gt;【行注释】&lt;/code&gt; 。 &lt;code&gt;【Ctrl+K Ctrl+S】&lt;/code&gt; 也可以添加注释，但有些语言不支持该快捷方式取消注释。 &lt;code&gt;【块注释】&lt;/code&gt; 的添加快捷键是 &lt;code&gt;【Shift+Alt+A】&lt;/code&gt; ，但易与企业微信等软件的截图热键冲突。&lt;/p&gt;
+</content>
+        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
+        <category term="VScode" scheme="https://yunian.top/categories/MyBlog/Tools/VScode/" />
         <updated>2023-10-27T07:27:05.221Z</updated>
     </entry>
     <entry>

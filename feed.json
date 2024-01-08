@@ -125,18 +125,6 @@
             ]
         },
         {
-            "id": "https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/",
-            "url": "https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/",
-            "title": "VScode-常用配置",
-            "date_published": "2023-10-27T07:27:05.221Z",
-            "content_html": "<h1 id=\"vscode-常用配置\"><a class=\"anchor\" href=\"#vscode-常用配置\">#</a> VScode - 常用配置</h1>\n<h2 id=\"一-vscode工作区\"><a class=\"anchor\" href=\"#一-vscode工作区\">#</a> 一、VSCode 工作区</h2>\n<h3 id=\"1-创建工作区\"><a class=\"anchor\" href=\"#1-创建工作区\">#</a> 1. 创建工作区</h3>\n<p>首先，需要先关闭打开的工作区，在 <code>【文件】</code> 中点击 <code>【关闭工作区】</code></p>\n<p>而后，建立新的工作区文件，在 <code>【文件】</code> 中点击 <code>【将工作区另存为】</code> ，选择工作的文件夹目录，点击 <code>【确定】</code> ，就会在选定的工作目录下，生成新的 <code>【workspace.code-workspace】</code> 工作区文件，该文件保存了工作区的文件夹目录路径和本工作区的自定义设置等。此时，VSCode 使用的工作区即是这个新建的工作区。</p>\n<p>由于工作区内还未添加内容，页面显示空白，需要在 <code>【资源管理器】</code> 中添加文件夹到工作区，或者在 <code>【文件】</code> 中选择 <code>【将文件夹添加到工作区】</code> ，工作区不仅可以添加 <code>【workspace工作区文件】</code> 所在目录下的文件或者文件夹，也可以添加其他目录的文件。完成添加之后，资源管理器中就会列出工作区内的文件夹目录，就可以开始进行开发工作了。</p>\n<h3 id=\"2-管理工作区文件\"><a class=\"anchor\" href=\"#2-管理工作区文件\">#</a> 2. 管理工作区文件</h3>\n<p>添加文件夹后，显示的是文件夹下所有的文件和下一级文件夹，而在工作中，往往有许多东西不需要修改变动，或者无需关心显示，因此，我们可以把工作区中这些让显示显得冗余的文件和文件夹隐藏起来。<br>\n在工作区目录下，单击鼠标右键，使用 <code>【Ctrl+shift+P】</code> 快捷键打开设置搜索栏搜索 <code>【settings】</code> ，在下拉项中找到 <code>【首选项：打开工作区设置】</code> ，或者选择 <code>【打开文件夹设置】</code> ，都可进入文件夹、工作区或全局的设置界面。</p>\n<p>然后在上方的搜索栏搜索 <code>【exclude】</code> ，在 <code>【Files:exclude】</code> 区域就可以开始添加隐藏的文件模式。 <code>【**/文件路径】</code> 模式可隐藏指定路径的文件夹以及其中的文件，和 <code>【**/文件名.后缀】</code> 或者 <code>【**/*.后缀】</code> 模式可根据文件名称或者文件的后缀隐藏特定的文件。</p>\n<h2 id=\"vscode快捷键\"><a class=\"anchor\" href=\"#vscode快捷键\">#</a> VSCode 快捷键</h2>\n<h3 id=\"1-注释快捷键\"><a class=\"anchor\" href=\"#1-注释快捷键\">#</a> 1. 注释快捷键</h3>\n<p>VSCode 支持在多种语言中使用快捷键操作注释，建议使用 <code>【Ctrl+/】</code> 快捷键，可以添加或取消 <code>【行注释】</code> 。 <code>【Ctrl+K Ctrl+S】</code> 也可以添加注释，但有些语言不支持该快捷方式取消注释。 <code>【块注释】</code> 的添加快捷键是 <code>【Shift+Alt+A】</code> ，但易与企业微信等软件的截图热键冲突。</p>\n",
-            "tags": [
-                "余年",
-                "软件使用",
-                "VScode"
-            ]
-        },
-        {
             "id": "https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/",
             "url": "https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/",
             "title": "Word-使用技巧",
@@ -146,6 +134,18 @@
                 "余年",
                 "软件使用",
                 "Word"
+            ]
+        },
+        {
+            "id": "https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/",
+            "url": "https://yunian.top/MyBlog/Tools/VScode/VScode-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/",
+            "title": "VScode-常用配置",
+            "date_published": "2023-10-27T07:27:05.221Z",
+            "content_html": "<h1 id=\"vscode-常用配置\"><a class=\"anchor\" href=\"#vscode-常用配置\">#</a> VScode - 常用配置</h1>\n<h2 id=\"一-vscode工作区\"><a class=\"anchor\" href=\"#一-vscode工作区\">#</a> 一、VSCode 工作区</h2>\n<h3 id=\"1-创建工作区\"><a class=\"anchor\" href=\"#1-创建工作区\">#</a> 1. 创建工作区</h3>\n<p>首先，需要先关闭打开的工作区，在 <code>【文件】</code> 中点击 <code>【关闭工作区】</code></p>\n<p>而后，建立新的工作区文件，在 <code>【文件】</code> 中点击 <code>【将工作区另存为】</code> ，选择工作的文件夹目录，点击 <code>【确定】</code> ，就会在选定的工作目录下，生成新的 <code>【workspace.code-workspace】</code> 工作区文件，该文件保存了工作区的文件夹目录路径和本工作区的自定义设置等。此时，VSCode 使用的工作区即是这个新建的工作区。</p>\n<p>由于工作区内还未添加内容，页面显示空白，需要在 <code>【资源管理器】</code> 中添加文件夹到工作区，或者在 <code>【文件】</code> 中选择 <code>【将文件夹添加到工作区】</code> ，工作区不仅可以添加 <code>【workspace工作区文件】</code> 所在目录下的文件或者文件夹，也可以添加其他目录的文件。完成添加之后，资源管理器中就会列出工作区内的文件夹目录，就可以开始进行开发工作了。</p>\n<h3 id=\"2-管理工作区文件\"><a class=\"anchor\" href=\"#2-管理工作区文件\">#</a> 2. 管理工作区文件</h3>\n<p>添加文件夹后，显示的是文件夹下所有的文件和下一级文件夹，而在工作中，往往有许多东西不需要修改变动，或者无需关心显示，因此，我们可以把工作区中这些让显示显得冗余的文件和文件夹隐藏起来。<br>\n在工作区目录下，单击鼠标右键，使用 <code>【Ctrl+shift+P】</code> 快捷键打开设置搜索栏搜索 <code>【settings】</code> ，在下拉项中找到 <code>【首选项：打开工作区设置】</code> ，或者选择 <code>【打开文件夹设置】</code> ，都可进入文件夹、工作区或全局的设置界面。</p>\n<p>然后在上方的搜索栏搜索 <code>【exclude】</code> ，在 <code>【Files:exclude】</code> 区域就可以开始添加隐藏的文件模式。 <code>【**/文件路径】</code> 模式可隐藏指定路径的文件夹以及其中的文件，和 <code>【**/文件名.后缀】</code> 或者 <code>【**/*.后缀】</code> 模式可根据文件名称或者文件的后缀隐藏特定的文件。</p>\n<h2 id=\"vscode快捷键\"><a class=\"anchor\" href=\"#vscode快捷键\">#</a> VSCode 快捷键</h2>\n<h3 id=\"1-注释快捷键\"><a class=\"anchor\" href=\"#1-注释快捷键\">#</a> 1. 注释快捷键</h3>\n<p>VSCode 支持在多种语言中使用快捷键操作注释，建议使用 <code>【Ctrl+/】</code> 快捷键，可以添加或取消 <code>【行注释】</code> 。 <code>【Ctrl+K Ctrl+S】</code> 也可以添加注释，但有些语言不支持该快捷方式取消注释。 <code>【块注释】</code> 的添加快捷键是 <code>【Shift+Alt+A】</code> ，但易与企业微信等软件的截图热键冲突。</p>\n",
+            "tags": [
+                "余年",
+                "软件使用",
+                "VScode"
             ]
         },
         {
