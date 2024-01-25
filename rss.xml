@@ -10,8 +10,15 @@
         </author>
         <description>学习笔记和随笔记录</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 07 Jan 2024 11:38:47 +0800</pubDate>
-        <lastBuildDate>Sun, 07 Jan 2024 11:38:47 +0800</lastBuildDate>
+        <pubDate>Thu, 11 Jan 2024 14:01:40 +0800</pubDate>
+        <lastBuildDate>Thu, 11 Jan 2024 14:01:40 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://yunian.top/MyBlog/Hexo/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/</guid>
+            <title></title>
+            <link>https://yunian.top/MyBlog/Hexo/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/</link>
+            <pubDate>Thu, 11 Jan 2024 14:01:40 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://yunian.top/MyBlog/Note/C++/C++/</guid>
             <title></title>
@@ -1130,9 +1137,10 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/VPJosMLScmyukiD.png&#34; alt=&#34;Hexo博客初始页面&#34;&gt;&lt;/p&gt;
-&lt;p&gt;至此，一个初始的 Hexo 博客站点已经搭建完成。在 Bash 窗口按&lt;span class=&#34;kbd&#34;&gt; Ctrl&lt;/span&gt; + &lt;span class=&#34;kbd&#34;&gt;C&lt;/span&gt; 可以关停本地服务器。&lt;/p&gt;
+&lt;p&gt;在 Bash 窗口按&lt;span class=&#34;kbd&#34;&gt; Ctrl&lt;/span&gt; + &lt;span class=&#34;kbd&#34;&gt;C&lt;/span&gt; 可以关停本地服务器。&lt;/p&gt;
+&lt;p&gt;至此，一个初始的 Hexo 博客站点已经搭建完成。&lt;/p&gt;
 &lt;p&gt;此时， &lt;code&gt;blog&lt;/code&gt;  博客根目录下主要有以下内容：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node_modules: 安装的 Hexo 的依赖包和插件等&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;scaffolds：存放布局模板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;source：博客源文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;themes：存放个性化主题文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_config.yml: 全局配置文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;绑定远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定远程仓库&#34;&gt;#&lt;/a&gt; 绑定远程仓库&lt;/h1&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node_modules: 安装的 Hexo 的依赖包和插件等&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;scaffolds：存放布局模板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;source：博客源文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;themes：存放个性化主题文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_config.yml: 全局配置文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之后，可以在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt; Hexo 主题仓库&lt;/span&gt;中下载喜欢的主题，根据主题说明进行自定义配置，即可定制化博客站点效果。结合 git 工具以及 Gitee 和 Github 等平台服务还可以实现博客线上部署以及源文件备份等。本站主题配置和博客部署流程可参阅文章&lt;a href=&#34;https://yunian.top/MyBlog/Hexo/Shoka%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/&#34;&gt; Shoka 主题配置&lt;/a&gt;和&lt;a href&gt;博客部署及备份&lt;/a&gt;。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -1217,43 +1225,44 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
             <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
             <category term="Markdown" scheme="https://yunian.top/tags/Markdown/" />
             <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;个人博客二markdown语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#个人博客二markdown语法&#34;&gt;#&lt;/a&gt; 个人博客（二）Markdown 语法&lt;/h1&gt;
-&lt;p&gt;Markdown 是一种轻量级的标记型语言。创作时，允许笔者使用纯文本格式编写文档，而在发布阶段再解析成格式多元、样式丰富的 HTML 超文本格式用于显示，简化了排版布局的工作量。&lt;/p&gt;
-&lt;h2 id=&#34;一-markdown常用标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-markdown常用标记&#34;&gt;#&lt;/a&gt; 一、 Markdown 常用标记&lt;/h2&gt;
-&lt;p&gt;Markdown 语言通过简化的文本标记，能够更快捷地实现 HTML 网页的各种基本元素的内容创作。标题、列表等行元素的标记与内容之间至少有一个空格才能正常显示。&lt;/p&gt;
-&lt;h3 id=&#34;1-标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-标题&#34;&gt;#&lt;/a&gt; 1. 标题&lt;/h3&gt;
-&lt;p&gt;标题使用 &lt;code&gt;【#】&lt;/code&gt; 符号进行标记。符号的个数对应标题级别，最多不超过六级。字号逐渐减小，一级标题字号最大，六级标题字号最小。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;./../assets/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Markdown%E8%AF%AD%E6%B3%95/Markdown-%E6%A0%87%E9%A2%98%E7%BA%A7%E5%88%AB.png&#34; alt=&#34;Markdown-标题级别&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2-列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-列表&#34;&gt;#&lt;/a&gt; 2. 列表&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;无序列表&lt;br&gt;
- &lt;code&gt;【-】&lt;/code&gt; 、 &lt;code&gt;【*】&lt;/code&gt; 、 &lt;code&gt;【+】&lt;/code&gt; 都可以作为无序列表的项标记，效果相同。 &lt;code&gt;【-】&lt;/code&gt; 输入法的双语下都能够直接输入，因此比较常用。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;* 第一项
-    * 次第一项
-+ 第二项 
+            <description><![CDATA[ &lt;h1 id=&#34;一-markdown常用标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-markdown常用标记&#34;&gt;#&lt;/a&gt; 一、 Markdown 常用标记&lt;/h1&gt;
+&lt;p&gt;Markdown 是一种轻量级的标记型语言。使用 Markdown 语言创作文章时，可以结合简化的文本标记，进行纯文本格式的文档编写，在发布阶段则会根据不同的语言引擎将标记后的文本内容解析成网页的各种基本元素，简化了排版布局的工作量，更快捷地实现 Html 网页的的内容创作。&lt;/p&gt;
+&lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
+&lt;p&gt;文章中的标题可以使用 &lt;code&gt;#&lt;/code&gt; 符号进行标记， &lt;code&gt;#&lt;/code&gt; 后加上一个空格就可以加上文章的各段标题文本。 &lt;code&gt;#&lt;/code&gt; 符号的个数也对应着文章的标题级别，最多允许六级标题，级别越高，标题字号越小。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/01/20/uDvgI1bGOrAUxhS.png&#34; alt=&#34;标题各级效果&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
+&lt;p&gt;对于要点、说明、步骤等需要列举的内容，在 Markdown 文本可以采用列表标签进行标记。对于并列关系的要点内容等，可以使用无序列表标记，而要更好的表现流程、步骤等内容的顺序结构，可以使用有序列表标记。&lt;/p&gt;
+&lt;p&gt;无序列表项的标记符号有 &lt;code&gt;-&lt;/code&gt; 、 &lt;code&gt;*&lt;/code&gt; 、 &lt;code&gt;+&lt;/code&gt; ，在符号后加一个空格后再编写列表项的文本内容即可。三种符号的标记效果相同，建议使用 &lt;code&gt;-&lt;/code&gt;  符号，在双语输入法下都能直接输出字符。另外，无序列表的次级列表项较比上一级需要在符号前加 &lt;code&gt;4&lt;/code&gt;  个空格或者一个 &lt;code&gt;Tab制表符&lt;/code&gt; 递进。&lt;/p&gt;
+&lt;p&gt;有序列表，其标记符号使用数字和符号 &lt;code&gt;.&lt;/code&gt;  进行标序，如 &lt;code&gt;1.&lt;/code&gt; 、 &lt;code&gt;2.&lt;/code&gt;  等等。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;// 无序列表
+// - + * 符号标记效果相同，可以混合使用，建议全部使用 -
+- 第一项
+    - 次第一项
+    - 次第二项
+- 第二项 
 - 第三项
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;./../assets/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Markdown%E8%AF%AD%E6%B3%95/Markdown-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%E6%95%88%E6%9E%9C.png&#34; alt=&#34;Markdown-无序列表效果&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;有序列表&lt;br&gt;
-使用 &lt;code&gt;1.&lt;/code&gt; 、 &lt;code&gt;2.&lt;/code&gt;  编号标序即可实现有序列表，&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;1. 第一项
-    1.1 次第一项
+
+// 有序列表
+1. 第一项
 2. 第二项
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;./../assets/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Markdown%E8%AF%AD%E6%B3%95/Markdown-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%E6%95%88%E6%9E%9C.png&#34; alt=&#34;Markdown-有序列表效果&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;3-字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-字体&#34;&gt;#&lt;/a&gt; 3. 字体&lt;/h3&gt;
+&lt;p&gt;无序列表：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项
+&lt;ul&gt;
+&lt;li&gt;次第一项&lt;/li&gt;
+&lt;li&gt;次第二项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h2&gt;
 &lt;p&gt;Markdown 可以使用标记来使用加粗、斜体等常用字体。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;*斜体*或_斜体_
 **粗体**
@@ -1263,7 +1272,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 ==背景高亮==
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img data-src=&#34;./../assets/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Markdown%E8%AF%AD%E6%B3%95/Markdown-%E5%B8%B8%E7%94%A8%E5%AD%97%E4%BD%93%E6%95%88%E6%9E%9C.png&#34; alt=&#34;Markdown-常用字体效果&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4-链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-链接&#34;&gt;#&lt;/a&gt; 4. 链接&lt;/h3&gt;
+&lt;h2 id=&#34;4-链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-链接&#34;&gt;#&lt;/a&gt; 4. 链接&lt;/h2&gt;
 &lt;p&gt;​    Markdown 中引用链接有多种方法：直接输入网址，就可以自动转换成链接的形式，此时链接显示的文本为网址本身；还可以使用 &lt;code&gt;【[alt](url &amp;quot;title&amp;quot;)】&lt;/code&gt; 的格式引用链接，适用于网址较长的情况，此时链接的显示文本为 &lt;code&gt;【alt】&lt;/code&gt; 的内容， &lt;code&gt;【url】&lt;/code&gt; 则是引用的网址， &lt;code&gt;【&amp;quot;title&amp;quot;】&lt;/code&gt; 是鼠标悬停在链接上时显示的文本内容，不是必须使用的属性，一般会省略。&lt;br&gt;
 多个网址的引用还可以使用类似于参考文献的引用格式，即将多个网址罗列在同一处并作好记号，格式为 &lt;code&gt;【[alt]:url &amp;quot;title&amp;quot;】&lt;/code&gt; ，使用时引用对应网址的标记（可以是编号或者文字，支持中文）。&lt;br&gt;
 链接使用示例：&lt;/p&gt;
@@ -1278,7 +1287,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 ①直接输入网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5iYWlkdS5jb20=&#34;&gt;www.baidu.com&lt;/span&gt;&lt;br&gt;
 ②使用 &lt;code&gt;【[alt](url)】&lt;/code&gt; 的格式：&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;&lt;br&gt;
 ③我经常去的几个网站&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29t&#34;&gt; Google&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5qaWFuc2h1LmNvbQ==&#34;&gt;简书&lt;/span&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;5-图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5-图片&#34;&gt;#&lt;/a&gt; 5. 图片&lt;/h3&gt;
+&lt;h2 id=&#34;5-图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5-图片&#34;&gt;#&lt;/a&gt; 5. 图片&lt;/h2&gt;
 &lt;p&gt;Markdown 一般使用图片的网络地址来插入图片，本地图片也可以引用，但是很容易加载失败。&lt;br&gt;
 虽然 Markdown 本身支持在文档中插入图片的操作，但是无法对图片的大小、位置等进行控制，影响网页的排版布局，因此建议使用 HTML 标签，结合图床，在文档中插入图片。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;①Markdown插入图片：
@@ -1288,7 +1297,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &amp;lt;img src=图片url witdh=&amp;quot;&amp;quot; height=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其中 &lt;code&gt;【alt】&lt;/code&gt; 属性是图片名，也是加载失败时页面替代显示的文本内容， &lt;code&gt;【url】&lt;/code&gt; 则是图片的 url 链接地址， &lt;code&gt;【title】&lt;/code&gt; 属性是鼠标悬浮在图片上时显示的文本内容。&lt;/p&gt;
-&lt;h3 id=&#34;6-引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6-引用&#34;&gt;#&lt;/a&gt; 6. 引用&lt;/h3&gt;
+&lt;h2 id=&#34;6-引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6-引用&#34;&gt;#&lt;/a&gt; 6. 引用&lt;/h2&gt;
 &lt;p&gt;创作时，有时候需要引用名人名言、名著佳句等，在 Markdown 中，使用 &lt;code&gt;【&amp;gt;】&lt;/code&gt; 符号标记引用，并支持嵌套， &lt;code&gt;【&amp;gt;】&lt;/code&gt; 符号的个数即是此处引用的嵌套层数。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;gt; 生如夏花之绚烂，死如秋叶之静美。&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;——泰戈尔&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1299,7 +1308,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;ul&gt;
 &lt;li&gt;注：此处作者部分为让文本右对齐，使用了 HTML 标签的 &lt;code&gt;【align】&lt;/code&gt; 属性实现。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;7-表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-表格&#34;&gt;#&lt;/a&gt; 7. 表格&lt;/h3&gt;
+&lt;h2 id=&#34;7-表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-表格&#34;&gt;#&lt;/a&gt; 7. 表格&lt;/h2&gt;
 &lt;p&gt;表格也是常用的数据展示格式，不仅能够直观地展示数据，也能够将数据按照一定的结构组织起来。Markdown 中表格主要有 &lt;code&gt;【单元格】&lt;/code&gt; 、 &lt;code&gt;【列名】&lt;/code&gt; 和 &lt;code&gt;【分割线】&lt;/code&gt; 三种元素：表格中的每个数据都放在单元格中，单元格之间以 &lt;code&gt;【|】&lt;/code&gt; 分隔开；列名是表格中第一行的数据内容，是每一列数据的意义说明；在列名与数据单元格之间，即表格的第二行，这行的每个单元格需要固定插入一行分割线 &lt;code&gt;【----】&lt;/code&gt; ，用于文档解析时区分列名与数据单元格。而分割线的左右两端可以添加 &lt;code&gt;【:】&lt;/code&gt; 冒号用于该列的文本对齐方式的控制，与 &lt;code&gt;【:】&lt;/code&gt; 的位置有关，在分割线左侧即是左对齐，在右侧为右对齐，而两端都有时，则为居中对齐。&lt;br&gt;
 表格使用示例：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;&amp;lt;!-- 列名 --&amp;gt;
@@ -1335,7 +1344,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;ul&gt;
 &lt;li&gt;注意：不能在表格内容的所在行编写注释，否则会破坏表格格式，无法正常显示。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;7-代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-代码块&#34;&gt;#&lt;/a&gt; 7. 代码块&lt;/h3&gt;
+&lt;h2 id=&#34;7-代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-代码块&#34;&gt;#&lt;/a&gt; 7. 代码块&lt;/h2&gt;
 &lt;p&gt;Markdown 中，使用一组反引号 &lt;code&gt;【`】&lt;/code&gt; 可以实现行内代码的突出显示。而行首的四个连续空格或者 &lt;code&gt;【Tab】&lt;/code&gt; 制表符可以标记出一片代码块区域，不过用一组 &lt;code&gt;【```】&lt;/code&gt; 可以更直观地标识出代码块区域。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-C语言(语言名)&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
 
@@ -1344,14 +1353,14 @@ int main(int argc, char *argv[]) &amp;#123;
     return 0; 
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;8-分割线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8-分割线&#34;&gt;#&lt;/a&gt; 8. 分割线&lt;/h3&gt;
+&lt;h2 id=&#34;8-分割线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8-分割线&#34;&gt;#&lt;/a&gt; 8. 分割线&lt;/h2&gt;
 &lt;p&gt;在一行内使用三个或三个以上的 &lt;code&gt;【*】&lt;/code&gt; 、 &lt;code&gt;【-】&lt;/code&gt; 或者 &lt;code&gt;【_】&lt;/code&gt; 都可以在文内画出一条分割线，行内不能有注释等其他内容。&lt;br&gt;
 如下方是一条分割线&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;二-markdown使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-markdown使用技巧&#34;&gt;#&lt;/a&gt; 二、 Markdown 使用技巧&lt;/h2&gt;
-&lt;h3 id=&#34;1-支持html标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-支持html标签&#34;&gt;#&lt;/a&gt; 1. 支持 HTML 标签&lt;/h3&gt;
+&lt;h1 id=&#34;二-markdown使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-markdown使用技巧&#34;&gt;#&lt;/a&gt; 二、 Markdown 使用技巧&lt;/h1&gt;
+&lt;h2 id=&#34;1-支持html标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-支持html标签&#34;&gt;#&lt;/a&gt; 1. 支持 HTML 标签&lt;/h2&gt;
 &lt;p&gt;由于 Markdown 文档最终会解析成 HTML 超文本格式，因此，对于 Markdown 原生语法集合无法实现的格式内容，仍然可以在 Markdown 文档中使用 HTML 语言和 CSS 样式来实现和控制。&lt;/p&gt;
-&lt;h3 id=&#34;2-文档注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-文档注释&#34;&gt;#&lt;/a&gt; 2. 文档注释&lt;/h3&gt;
+&lt;h2 id=&#34;2-文档注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-文档注释&#34;&gt;#&lt;/a&gt; 2. 文档注释&lt;/h2&gt;
 &lt;p&gt;文档中有一些说明是用来提示创作者的，并不需要在网页中进行显示。此时，可以就使用文档注释把这部分内容隐藏显示。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1365,10 +1374,10 @@ Markdown 文档支持两种 HTML 注释方法：一种是 HTML 支持的注释�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3-特殊字符转义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-特殊字符转义&#34;&gt;#&lt;/a&gt; 3. 特殊字符转义&lt;/h3&gt;
+&lt;h2 id=&#34;3-特殊字符转义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-特殊字符转义&#34;&gt;#&lt;/a&gt; 3. 特殊字符转义&lt;/h2&gt;
 &lt;p&gt;对于 &lt;code&gt;【&amp;lt;】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;】&lt;/code&gt; 等特殊字符，使用其字符实体 ( &lt;code&gt;【&amp;amp;lt】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;amp】&lt;/code&gt; 等)，或者使用 &lt;code&gt;【/】&lt;/code&gt; 进行转义后才可以直接显示。&lt;br&gt;
 而使用一对 &lt;code&gt;【`】&lt;/code&gt;  反引号包括直接输入的特殊字符时，则可以强调显示这些特殊字符。反引号 &lt;code&gt;【`】&lt;/code&gt; 本身需要使用一对 &lt;code&gt;【```】&lt;/code&gt; 才可以强调显示， &lt;code&gt;【```】&lt;/code&gt; 则需要一对 &lt;code&gt;【`】&lt;/code&gt; 。&lt;/p&gt;
-&lt;h3 id=&#34;4-文本控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-文本控制&#34;&gt;#&lt;/a&gt; 4. 文本控制&lt;/h3&gt;
+&lt;h2 id=&#34;4-文本控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-文本控制&#34;&gt;#&lt;/a&gt; 4. 文本控制&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;缩进&lt;br&gt;
  Markdown 文档中，行首连续的四个空格会被识别成代码块标记，而行内的连续空格在解析时也会被被忽略掉。因此，要在 Markdown 文档中实现首行缩进，需要使用代表空格的字符实体如 &lt;code&gt;【&amp;amp;emsp;】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;#8195;】&lt;/code&gt; 占位以达到缩进效果。不同格式的空格所占的位置长度不一样，按需选择。而且字符实体后的英文分号 &lt;code&gt;【;】&lt;/code&gt; 不可省略。&lt;/li&gt;
@@ -1393,7 +1402,7 @@ Markdown 文档支持两种 HTML 注释方法：一种是 HTML 支持的注释�
 &amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;行右对齐&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&amp;lt;img src=https://gitee.com/laoyuan13247/picture/raw/master/img/Markdown - 文本对齐效果.png witdh=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot; title=&amp;quot;&amp;quot;alt=&amp;quot;&amp;quot;/&amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;三-markdown进阶使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-markdown进阶使用&#34;&gt;#&lt;/a&gt; 三、 Markdown 进阶使用&lt;/h2&gt;
+&lt;h1 id=&#34;三-markdown进阶使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-markdown进阶使用&#34;&gt;#&lt;/a&gt; 三、 Markdown 进阶使用&lt;/h1&gt;
 &lt;p&gt;Markdown 借助插件、工具等还可以实现数学公式编辑、流程图绘制等效果，不过此处暂不表述。&lt;/p&gt;
  ]]></description>
         </item>
