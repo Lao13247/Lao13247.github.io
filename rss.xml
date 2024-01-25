@@ -1225,28 +1225,16 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
             <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
             <category term="Markdown" scheme="https://yunian.top/tags/Markdown/" />
             <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;一-markdown常用标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-markdown常用标记&#34;&gt;#&lt;/a&gt; 一、 Markdown 常用标记&lt;/h1&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;markdown常用标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown常用标记&#34;&gt;#&lt;/a&gt; Markdown 常用标记&lt;/h1&gt;
 &lt;p&gt;Markdown 是一种轻量级的标记型语言。使用 Markdown 语言创作文章时，可以结合简化的文本标记，进行纯文本格式的文档编写，在发布阶段则会根据不同的语言引擎将标记后的文本内容解析成网页的各种基本元素，简化了排版布局的工作量，更快捷地实现 Html 网页的的内容创作。&lt;/p&gt;
 &lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
-&lt;p&gt;文章中的标题可以使用 &lt;code&gt;#&lt;/code&gt; 符号进行标记， &lt;code&gt;#&lt;/code&gt; 后加上一个空格就可以加上文章的各段标题文本。 &lt;code&gt;#&lt;/code&gt; 符号的个数也对应着文章的标题级别，最多允许六级标题，级别越高，标题字号越小。&lt;/p&gt;
+&lt;p&gt;文章中的标题可以使用 &lt;code&gt;#&lt;/code&gt; 符号进行标记， &lt;code&gt;#&lt;/code&gt; 接一个空格后再加上文章各标题的文本即可。 &lt;code&gt;#&lt;/code&gt; 符号的个数也对应着文章的标题级别，最多允许六级标题，级别越高，标题字号越小。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/01/20/uDvgI1bGOrAUxhS.png&#34; alt=&#34;标题各级效果&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
 &lt;p&gt;对于要点、说明、步骤等需要列举的内容，在 Markdown 文本可以采用列表标签进行标记。对于并列关系的要点内容等，可以使用无序列表标记，而要更好的表现流程、步骤等内容的顺序结构，可以使用有序列表标记。&lt;/p&gt;
-&lt;p&gt;无序列表项的标记符号有 &lt;code&gt;-&lt;/code&gt; 、 &lt;code&gt;*&lt;/code&gt; 、 &lt;code&gt;+&lt;/code&gt; ，在符号后加一个空格后再编写列表项的文本内容即可。三种符号的标记效果相同，建议使用 &lt;code&gt;-&lt;/code&gt;  符号，在双语输入法下都能直接输出字符。另外，无序列表的次级列表项较比上一级需要在符号前加 &lt;code&gt;4&lt;/code&gt;  个空格或者一个 &lt;code&gt;Tab制表符&lt;/code&gt; 递进。&lt;/p&gt;
-&lt;p&gt;有序列表，其标记符号使用数字和符号 &lt;code&gt;.&lt;/code&gt;  进行标序，如 &lt;code&gt;1.&lt;/code&gt; 、 &lt;code&gt;2.&lt;/code&gt;  等等。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;// 无序列表
-// - + * 符号标记效果相同，可以混合使用，建议全部使用 -
-- 第一项
-    - 次第一项
-    - 次第二项
-- 第二项 
-- 第三项
-
-// 有序列表
-1. 第一项
-2. 第二项
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无序列表：&lt;/p&gt;
+&lt;p&gt;无序列表项的标记符号有 &lt;code&gt;-&lt;/code&gt; 、 &lt;code&gt;*&lt;/code&gt; 、 &lt;code&gt;+&lt;/code&gt; ，标记符号加一个空格后再接列表项的文本内容即可，三种符号的标记效果相同，建议使用 &lt;code&gt;-&lt;/code&gt;  符号，因为在双语输入法下都能直接输出该字符。另外，次级列表项较比上一级需要在标记前加 &lt;code&gt;4&lt;/code&gt;  个空格或者一个 &lt;code&gt;Tab制表符&lt;/code&gt; 递进。&lt;/p&gt;
+&lt;p&gt;有序列表，每项的标记符号直接使用数字和符号 &lt;code&gt;.&lt;/code&gt;  进行标序，如 &lt;code&gt;1.&lt;/code&gt; 、 &lt;code&gt;2.&lt;/code&gt;  等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无序列表：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一项
 &lt;ul&gt;
@@ -1257,69 +1245,45 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;li&gt;第二项&lt;/li&gt;
 &lt;li&gt;第三项&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;有序列表：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;有序列表：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;第一项&lt;/li&gt;
 &lt;li&gt;第二项&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h2&gt;
-&lt;p&gt;Markdown 可以使用标记来使用加粗、斜体等常用字体。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;*斜体*或_斜体_
-**粗体**
-***加粗斜体***
-~~删除线~~
-++下划线++
-==背景高亮==
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;./../assets/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89Markdown%E8%AF%AD%E6%B3%95/Markdown-%E5%B8%B8%E7%94%A8%E5%AD%97%E4%BD%93%E6%95%88%E6%9E%9C.png&#34; alt=&#34;Markdown-常用字体效果&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;4-链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-链接&#34;&gt;#&lt;/a&gt; 4. 链接&lt;/h2&gt;
-&lt;p&gt;​    Markdown 中引用链接有多种方法：直接输入网址，就可以自动转换成链接的形式，此时链接显示的文本为网址本身；还可以使用 &lt;code&gt;【[alt](url &amp;quot;title&amp;quot;)】&lt;/code&gt; 的格式引用链接，适用于网址较长的情况，此时链接的显示文本为 &lt;code&gt;【alt】&lt;/code&gt; 的内容， &lt;code&gt;【url】&lt;/code&gt; 则是引用的网址， &lt;code&gt;【&amp;quot;title&amp;quot;】&lt;/code&gt; 是鼠标悬停在链接上时显示的文本内容，不是必须使用的属性，一般会省略。&lt;br&gt;
-多个网址的引用还可以使用类似于参考文献的引用格式，即将多个网址罗列在同一处并作好记号，格式为 &lt;code&gt;【[alt]:url &amp;quot;title&amp;quot;】&lt;/code&gt; ，使用时引用对应网址的标记（可以是编号或者文字，支持中文）。&lt;br&gt;
+&lt;p&gt;Markdown 默认可以使用特殊字体对文本进行标注，使用方式如下：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;* 斜体 *&lt;/em&gt; 或者 &lt;em&gt;_斜体_&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;** 粗体 **&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*** 加粗斜体 ***&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;~~ 删除线～～&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;下划线&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;背景高亮&lt;/mark&gt;&lt;/p&gt;
+&lt;h2 id=&#34;链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接&#34;&gt;#&lt;/a&gt; 链接&lt;/h2&gt;
+&lt;p&gt;在 Markdown 文本中可以直接输入网址，将自动转换成链接的形式，样式显示即为网址字符文本，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS13d3ctZW84ZS5iYWlkdS5jb20=&#34;&gt;如 www.baidu.com&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;如网址较长或者不想直接显示网址时，则可以采用 &lt;code&gt;[alt](url &amp;quot;title&amp;quot;)&lt;/code&gt;  的格式引用链接，其中 &lt;code&gt;alt&lt;/code&gt;  项为替代网址显示的内容文本， &lt;code&gt;url&lt;/code&gt;  项是需要引用的链接， &lt;code&gt;&amp;quot;title&amp;quot;&lt;/code&gt;  为鼠标悬停在链接上的显示文本， &lt;code&gt;title&lt;/code&gt;  属性可不配置，配置时不可省略双引号。&lt;br&gt;
+对于多个网址的引用还可以使用类似于参考文献的引用格式，即将多个网址罗列在同一处并作好记号，格式为 &lt;code&gt;[alt]:url &amp;quot;title&amp;quot;&lt;/code&gt; ，使用时引用对应网址的标记（可以是编号或者文字，支持中文）。&lt;br&gt;
 链接使用示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;①直接输入网址：www.baidu.com
-②使用[站名](网址)格式：[百度](www.baidu.com)
-③也可以通过脚注的方式隐藏链接，格式为[站名][脚注名][Google][Google]、[简书][简书]。
-
-[Google]:http://www.google.com &amp;quot;Google&amp;quot;
-[简书]:http://www.jianshu.com &amp;quot;简书&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;链接语法效果（按住【Ctrl】+ 鼠标左键点击链接即可打开网址）：&lt;br&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;①直接输入网址：www.baidu.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;②使用&lt;span class=&#34;token url&#34;&gt;[&lt;span class=&#34;token content&#34;&gt;站名&lt;/span&gt;](&lt;span class=&#34;token url&#34;&gt;网址&lt;/span&gt;)&lt;/span&gt;格式：&lt;span class=&#34;token url&#34;&gt;[&lt;span class=&#34;token content&#34;&gt;百度&lt;/span&gt;](&lt;span class=&#34;token url&#34;&gt;www.baidu.com&lt;/span&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;③也可以通过脚注的方式隐藏链接，格式为&lt;span class=&#34;token url&#34;&gt;[&lt;span class=&#34;token content&#34;&gt;站名&lt;/span&gt;][&lt;span class=&#34;token variable&#34;&gt;脚注名&lt;/span&gt;]&lt;/span&gt;[Google][Google]、&lt;span class=&#34;token url&#34;&gt;[&lt;span class=&#34;token content&#34;&gt;简书&lt;/span&gt;][&lt;span class=&#34;token variable&#34;&gt;简书&lt;/span&gt;]&lt;/span&gt;。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[Google]:http://www.google.com &#34;Google&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;[简书]:http://www.jianshu.com &#34;简书&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;链接语法效果（按住【Ctrl】+ 鼠标左键点击链接即可打开网址）：&lt;br&gt;
 ①直接输入网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5iYWlkdS5jb20=&#34;&gt;www.baidu.com&lt;/span&gt;&lt;br&gt;
-②使用 &lt;code&gt;【[alt](url)】&lt;/code&gt; 的格式：&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;&lt;br&gt;
+②使用 &lt;code&gt;【[alt](url)】&lt;/code&gt; 的格式：&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;。&lt;br&gt;
 ③我经常去的几个网站&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29t&#34;&gt; Google&lt;/span&gt;、&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5qaWFuc2h1LmNvbQ==&#34;&gt;简书&lt;/span&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;5-图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5-图片&#34;&gt;#&lt;/a&gt; 5. 图片&lt;/h2&gt;
+&lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
 &lt;p&gt;Markdown 一般使用图片的网络地址来插入图片，本地图片也可以引用，但是很容易加载失败。&lt;br&gt;
 虽然 Markdown 本身支持在文档中插入图片的操作，但是无法对图片的大小、位置等进行控制，影响网页的排版布局，因此建议使用 HTML 标签，结合图床，在文档中插入图片。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;①Markdown插入图片：
-![alt](图片url &amp;quot;title&amp;quot;)
-
-②HTML插入图片：
-&amp;lt;img src=图片url witdh=&amp;quot;&amp;quot; height=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot;/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中 &lt;code&gt;【alt】&lt;/code&gt; 属性是图片名，也是加载失败时页面替代显示的文本内容， &lt;code&gt;【url】&lt;/code&gt; 则是图片的 url 链接地址， &lt;code&gt;【title】&lt;/code&gt; 属性是鼠标悬浮在图片上时显示的文本内容。&lt;/p&gt;
-&lt;h2 id=&#34;6-引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6-引用&#34;&gt;#&lt;/a&gt; 6. 引用&lt;/h2&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;①Markdown插入图片：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token url&#34;&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;[&lt;span class=&#34;token content&#34;&gt;alt&lt;/span&gt;](&lt;span class=&#34;token url&#34;&gt;图片url&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;title&#34;&lt;/span&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;②HTML插入图片：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;图片url&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;witdh&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;其中 &lt;code&gt;【alt】&lt;/code&gt; 属性是图片名，也是加载失败时页面替代显示的文本内容， &lt;code&gt;【url】&lt;/code&gt; 则是图片的 url 链接地址， &lt;code&gt;【title】&lt;/code&gt; 属性是鼠标悬浮在图片上时显示的文本内容。&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
 &lt;p&gt;创作时，有时候需要引用名人名言、名著佳句等，在 Markdown 中，使用 &lt;code&gt;【&amp;gt;】&lt;/code&gt; 符号标记引用，并支持嵌套， &lt;code&gt;【&amp;gt;】&lt;/code&gt; 符号的个数即是此处引用的嵌套层数。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; 生如夏花之绚烂，死如秋叶之静美。&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;——泰戈尔&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;引用效果：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token blockquote punctuation&#34;&gt;&gt;&lt;/span&gt; 生如夏花之绚烂，死如秋叶之静美。&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;right&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;——泰戈尔&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;引用效果：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;生如夏花之绚烂，死如秋叶之静美。&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;—— 泰戈尔 &amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;注：此处作者部分为让文本右对齐，使用了 HTML 标签的 &lt;code&gt;【align】&lt;/code&gt; 属性实现。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;7-表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-表格&#34;&gt;#&lt;/a&gt; 7. 表格&lt;/h2&gt;
+&lt;h2 id=&#34;表格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h2&gt;
 &lt;p&gt;表格也是常用的数据展示格式，不仅能够直观地展示数据，也能够将数据按照一定的结构组织起来。Markdown 中表格主要有 &lt;code&gt;【单元格】&lt;/code&gt; 、 &lt;code&gt;【列名】&lt;/code&gt; 和 &lt;code&gt;【分割线】&lt;/code&gt; 三种元素：表格中的每个数据都放在单元格中，单元格之间以 &lt;code&gt;【|】&lt;/code&gt; 分隔开；列名是表格中第一行的数据内容，是每一列数据的意义说明；在列名与数据单元格之间，即表格的第二行，这行的每个单元格需要固定插入一行分割线 &lt;code&gt;【----】&lt;/code&gt; ，用于文档解析时区分列名与数据单元格。而分割线的左右两端可以添加 &lt;code&gt;【:】&lt;/code&gt; 冒号用于该列的文本对齐方式的控制，与 &lt;code&gt;【:】&lt;/code&gt; 的位置有关，在分割线左侧即是左对齐，在右侧为右对齐，而两端都有时，则为居中对齐。&lt;br&gt;
 表格使用示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;&amp;lt;!-- 列名 --&amp;gt;
-&amp;lt;!-- 分割线/文本对齐控制 --&amp;gt;
-&amp;lt;!-- 数据单元格 --&amp;gt;
-| 左对齐 | 右对齐 | 居中对齐 |
-| :---- | ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;效果：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 列名 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 分割线 / 文本对齐控制 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 数据单元格 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token table&#34;&gt;&lt;span class=&#34;token table-header-row&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-header important&#34;&gt; 左对齐 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-header important&#34;&gt; 右对齐 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-header important&#34;&gt; 居中对齐 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token table-line&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:----&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;----:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:----:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token table-data-rows&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token table-data&#34;&gt; 单元格 &lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;效果：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1344,49 +1308,32 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;ul&gt;
 &lt;li&gt;注意：不能在表格内容的所在行编写注释，否则会破坏表格格式，无法正常显示。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;7-代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-代码块&#34;&gt;#&lt;/a&gt; 7. 代码块&lt;/h2&gt;
+&lt;h2 id=&#34;代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码块&#34;&gt;#&lt;/a&gt; 代码块&lt;/h2&gt;
 &lt;p&gt;Markdown 中，使用一组反引号 &lt;code&gt;【`】&lt;/code&gt; 可以实现行内代码的突出显示。而行首的四个连续空格或者 &lt;code&gt;【Tab】&lt;/code&gt; 制表符可以标记出一片代码块区域，不过用一组 &lt;code&gt;【```】&lt;/code&gt; 可以更直观地标识出代码块区域。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C语言(语言名)&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
-
-int main(int argc, char *argv[]) &amp;#123;
-    printf(&amp;quot;Hello C World!&amp;quot;);
-    return 0; 
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;8-分割线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8-分割线&#34;&gt;#&lt;/a&gt; 8. 分割线&lt;/h2&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token title important&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;#&lt;/span&gt;include &amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;int main(int argc, char *argv[]) &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    printf(&#34;Hello C World!&#34;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    return 0; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;分割线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分割线&#34;&gt;#&lt;/a&gt; 分割线&lt;/h2&gt;
 &lt;p&gt;在一行内使用三个或三个以上的 &lt;code&gt;【*】&lt;/code&gt; 、 &lt;code&gt;【-】&lt;/code&gt; 或者 &lt;code&gt;【_】&lt;/code&gt; 都可以在文内画出一条分割线，行内不能有注释等其他内容。&lt;br&gt;
 如下方是一条分割线&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;二-markdown使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-markdown使用技巧&#34;&gt;#&lt;/a&gt; 二、 Markdown 使用技巧&lt;/h1&gt;
-&lt;h2 id=&#34;1-支持html标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-支持html标签&#34;&gt;#&lt;/a&gt; 1. 支持 HTML 标签&lt;/h2&gt;
+&lt;h1 id=&#34;markdown使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown使用技巧&#34;&gt;#&lt;/a&gt; Markdown 使用技巧&lt;/h1&gt;
+&lt;h2 id=&#34;支持html标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#支持html标签&#34;&gt;#&lt;/a&gt; 支持 HTML 标签&lt;/h2&gt;
 &lt;p&gt;由于 Markdown 文档最终会解析成 HTML 超文本格式，因此，对于 Markdown 原生语法集合无法实现的格式内容，仍然可以在 Markdown 文档中使用 HTML 语言和 CSS 样式来实现和控制。&lt;/p&gt;
-&lt;h2 id=&#34;2-文档注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-文档注释&#34;&gt;#&lt;/a&gt; 2. 文档注释&lt;/h2&gt;
+&lt;h2 id=&#34;文档注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文档注释&#34;&gt;#&lt;/a&gt; 文档注释&lt;/h2&gt;
 &lt;p&gt;文档中有一些说明是用来提示创作者的，并不需要在网页中进行显示。此时，可以就使用文档注释把这部分内容隐藏显示。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;HTML 注释:&lt;br&gt;
 Markdown 文档支持两种 HTML 注释方法：一种是 HTML 支持的注释语法，即 &lt;code&gt;【&amp;lt;!-- 注释内容 --&amp;gt;】&lt;/code&gt; ；另一种则是将元素的显示属性 &lt;code&gt;【display】&lt;/code&gt; 设置为 &lt;code&gt;【none】&lt;/code&gt; ，此时元素的内容即可看作是注释。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;&amp;lt;!-- 我是HTML直接支持的注释语法，单行注释  --&amp;gt;
-
-&amp;lt;div style=&#39;display: none&#39;&amp;gt;
-    我是HTML元素中的注释内容
-&amp;lt;/ div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 我是 HTML 直接支持的注释语法，单行注释  --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token special-attr&#34;&gt;&lt;span class=&#34;token attr-name&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token value css language-css&#34;&gt;&lt;span class=&#34;token property&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; none&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    我是HTML元素中的注释内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;lt;/ div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;3-特殊字符转义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-特殊字符转义&#34;&gt;#&lt;/a&gt; 3. 特殊字符转义&lt;/h2&gt;
+&lt;h2 id=&#34;特殊字符转义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊字符转义&#34;&gt;#&lt;/a&gt; 特殊字符转义&lt;/h2&gt;
 &lt;p&gt;对于 &lt;code&gt;【&amp;lt;】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;】&lt;/code&gt; 等特殊字符，使用其字符实体 ( &lt;code&gt;【&amp;amp;lt】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;amp】&lt;/code&gt; 等)，或者使用 &lt;code&gt;【/】&lt;/code&gt; 进行转义后才可以直接显示。&lt;br&gt;
 而使用一对 &lt;code&gt;【`】&lt;/code&gt;  反引号包括直接输入的特殊字符时，则可以强调显示这些特殊字符。反引号 &lt;code&gt;【`】&lt;/code&gt; 本身需要使用一对 &lt;code&gt;【```】&lt;/code&gt; 才可以强调显示， &lt;code&gt;【```】&lt;/code&gt; 则需要一对 &lt;code&gt;【`】&lt;/code&gt; 。&lt;/p&gt;
-&lt;h2 id=&#34;4-文本控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-文本控制&#34;&gt;#&lt;/a&gt; 4. 文本控制&lt;/h2&gt;
+&lt;h2 id=&#34;文本控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本控制&#34;&gt;#&lt;/a&gt; 文本控制&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;缩进&lt;br&gt;
  Markdown 文档中，行首连续的四个空格会被识别成代码块标记，而行内的连续空格在解析时也会被被忽略掉。因此，要在 Markdown 文档中实现首行缩进，需要使用代表空格的字符实体如 &lt;code&gt;【&amp;amp;emsp;】&lt;/code&gt; 、 &lt;code&gt;【&amp;amp;#8195;】&lt;/code&gt; 占位以达到缩进效果。不同格式的空格所占的位置长度不一样，按需选择。而且字符实体后的英文分号 &lt;code&gt;【;】&lt;/code&gt; 不可省略。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;1. &amp;amp;emsp;或&amp;amp;#8195; //全角
-2. &amp;amp;ensp;或&amp;amp;#8194; //半角
-3. &amp;amp;nbsp;或&amp;amp;#160;  //半角的一半
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token list punctuation&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;emsp;&#34;&gt;&amp;amp;emsp;&lt;/span&gt;或&lt;span class=&#34;token entity&#34; title=&#34;&amp;#8195;&#34;&gt;&amp;amp;#8195;&lt;/span&gt; //全角&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token list punctuation&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;ensp;&#34;&gt;&amp;amp;ensp;&lt;/span&gt;或&lt;span class=&#34;token entity&#34; title=&#34;&amp;#8194;&#34;&gt;&amp;amp;#8194;&lt;/span&gt; //半角&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token list punctuation&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;token entity named-entity&#34; title=&#34;&amp;nbsp;&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;或&lt;span class=&#34;token entity&#34; title=&#34;&amp;#160;&#34;&gt;&amp;amp;#160;&lt;/span&gt;  //半角的一半&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;换行&lt;br&gt;
 在不同的 Markdown 编辑器上，有的使用一次回车也许就可以实现换行，而有道云笔记上需要在上一行末尾添加两个空格才能使用回车换行，VSCode 中需要连续两次回车才能进行换行。&lt;/p&gt;
@@ -1396,13 +1343,8 @@ Markdown 文档支持两种 HTML 注释方法：一种是 HTML 支持的注释�
  Markdown 中文本对齐需要使用 HTML 标签的 &lt;code&gt;【align】&lt;/code&gt; 属性进行控制。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;行居中对齐&amp;lt;/center&amp;gt;
-&amp;lt;div align=&amp;quot;center&amp;quot;&amp;gt;行居中对齐&amp;lt;/div&amp;gt;
-&amp;lt;p align=&amp;quot;left&amp;quot;&amp;gt;行左对齐&amp;lt;/p&amp;gt;
-&amp;lt;p align=&amp;quot;right&amp;quot;&amp;gt;行右对齐&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;lt;img src=https://gitee.com/laoyuan13247/picture/raw/master/img/Markdown - 文本对齐效果.png witdh=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot; title=&amp;quot;&amp;quot;alt=&amp;quot;&amp;quot;/&amp;gt;&lt;/p&gt;
-&lt;h1 id=&#34;三-markdown进阶使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-markdown进阶使用&#34;&gt;#&lt;/a&gt; 三、 Markdown 进阶使用&lt;/h1&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;center&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;行居中对齐&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;center&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;center&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;行居中对齐&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;left&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;行左对齐&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;right&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;行右对齐&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&amp;lt;img src=https://gitee.com/laoyuan13247/picture/raw/master/img/Markdown - 文本对齐效果.png witdh=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot; title=&amp;quot;&amp;quot;alt=&amp;quot;&amp;quot;/&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;markdown进阶使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown进阶使用&#34;&gt;#&lt;/a&gt; Markdown 进阶使用&lt;/h1&gt;
 &lt;p&gt;Markdown 借助插件、工具等还可以实现数学公式编辑、流程图绘制等效果，不过此处暂不表述。&lt;/p&gt;
  ]]></description>
         </item>
