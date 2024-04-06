@@ -204,31 +204,31 @@
             <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
             <pubDate>Fri, 22 Dec 2023 12:22:25 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;hexo官方&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo官方&#34;&gt;#&lt;/a&gt; Hexo 官方&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/GpXUMfi6Q9wh3eY.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34;&gt;Hexo官方文档&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;说明文档&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/GpXUMfi6Q9wh3eY.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;Hexo主题仓库&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;主题仓库&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;hexo插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo插件&#34;&gt;#&lt;/a&gt; Hexo 插件&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;prismjs&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;prismjs&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/kRwY7MyHbg9sSAI.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34;&gt;Prismjs-代码高亮&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;Hexo插件&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;图床&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床&#34;&gt;#&lt;/a&gt; 图床&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Timeless&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Timeless&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/xpAko59MlPqWzVg.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34;&gt;Timeless漫图&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;图片资源&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Lsky Pro&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Lsky Pro&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/k4ZuEgjHDbcOyiL.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34;&gt;Lsky Pro图床&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;图床&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;SM.MS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;SM.MS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/eWQRhiGDVg8Fopf.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34;&gt;SM.MS图床&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;图床&lt;/p&gt;
@@ -1104,42 +1104,6 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
-            <title>Word-使用技巧</title>
-            <link>https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
-            <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-            <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-            <category term="Word" scheme="https://yunian.top/categories/MyBlog/Tools/Word/" />
-            <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;word-使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word-使用技巧&#34;&gt;#&lt;/a&gt; Word - 使用技巧&lt;/h1&gt;
-&lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
-&lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;分节符造成&lt;br&gt;
-  有时候使用 &lt;code&gt;【分节符】&lt;/code&gt; 也会产生空白页，此时无法直接删除空白页，需要先删除分节符：&lt;br&gt;
-  在 &lt;code&gt;【Office Word】&lt;/code&gt; 中，将视图切换为 &lt;code&gt;【草稿】&lt;/code&gt; 后，可以看到 &lt;code&gt;【分节符】&lt;/code&gt; 所产生的虚线，使用 &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中该行虚线，即可选中分节符将其删除。&lt;br&gt;
-   &lt;code&gt;【WPS文字】&lt;/code&gt; 不能切换视图为草稿，此时可以通过 &lt;code&gt;【查找替换】&lt;/code&gt; 功能 ( &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【F/H】&lt;/code&gt; )，可以找到文本中的分节符，将其替换 &lt;code&gt;【空格】&lt;/code&gt; 后，进而删除空白页。这个方法也可用于两个软件中多个空白页的删除。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;英文直引号变成中文弯引号问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英文直引号变成中文弯引号问题&#34;&gt;#&lt;/a&gt; 英文直引号变成中文弯引号问题&lt;/h2&gt;
-&lt;p&gt;  这是文本校对设置导致的问题。&lt;br&gt;
-  WPS 文字中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【直引号替换为弯引号】&lt;/code&gt; 设置，取消勾选并确认设置即可。WPS 文字默认不勾选该项。&lt;br&gt;
-  而 Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到该选项并取消勾选，之后都点击确认即可完成设置。Office 默认勾选该项。&lt;/p&gt;
-&lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
-&lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
-&lt;h2 id=&#34;取消自动编号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取消自动编号&#34;&gt;#&lt;/a&gt; 取消自动编号&lt;/h2&gt;
-&lt;p&gt;  新使用的 Office Word 或者 WPS 文字往往开启了自动编号功能，在书写上一项后，按下 &lt;code&gt;【Enter】&lt;/code&gt; 回车即可生成下一项的序号。虽然自动编号有时候能方便书写，但自动编号的格式经常会引起排版不协调的问题，因此，建议关闭这个功能，手动编号。&lt;br&gt;
-  Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到 &lt;code&gt;【自动编号列表】&lt;/code&gt; 设置，取消勾选即可。&lt;br&gt;
-WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【键入时自动应用自动编号列表】&lt;/code&gt; 设置，取消勾选。&lt;/p&gt;
-&lt;h2 id=&#34;公式显示问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式显示问题&#34;&gt;#&lt;/a&gt; 公式显示问题&lt;/h2&gt;
-&lt;p&gt;  因为公式的行高一般并不与文字相同，尤其是使用了多元数学符号的公式，那么在全文设置 &lt;code&gt;【行距】&lt;/code&gt; 为 &lt;code&gt;【固定值】&lt;/code&gt; 时，公式就有可能无法正常显示，此时，选中公式这一行，单独将其 &lt;code&gt;【行距】&lt;/code&gt; 修改为 &lt;code&gt;【单倍行距】&lt;/code&gt; , 公式行就会以自适应的行高进行显示。&lt;/p&gt;
-&lt;h2 id=&#34;图片变形或隐藏问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片变形或隐藏问题&#34;&gt;#&lt;/a&gt; 图片变形或隐藏问题&lt;/h2&gt;
-&lt;p&gt;  图片显示问题通常是由于图片的文字环绕方式设置与 &lt;code&gt;【固定值】&lt;/code&gt; 行距的设置冲突。&lt;br&gt;
-  一般来说，图片插入后的默认文字环绕方式为嵌入式，图片占据一行进行显示，若此时行距设置为固定值，图片也只能在一行的固定高度下进行显示，所以就造成了图片变形，或者被隐藏而无法显示的问题。&lt;br&gt;
-  通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br&gt;
-  将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://yunian.top/MyBlog/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</guid>
             <title>VScode快捷任务配置</title>
             <link>https://yunian.top/MyBlog/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</link>
@@ -1184,6 +1148,42 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;figure class=&#34;highlight json&#34;&gt;&lt;figcaption data-lang=&#34;JSON&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;key&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;alt+s&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;command&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;workbench.action.tasks.runTask&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;args&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;本地启动&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;key&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;alt+d&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;command&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;workbench.action.tasks.runTask&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;args&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;发布博客&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;key&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;alt+b&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;command&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;workbench.action.tasks.runTask&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;&#34;args&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;博客备份&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;其中 &lt;code&gt;key&lt;/code&gt;  属性代表所绑定的快捷键； &lt;code&gt;command&lt;/code&gt;  属性为快捷键执行的命令类型，不要更改； &lt;code&gt;args&lt;/code&gt;  属性则是快捷键执行参数，此处即对应的任务名称 &lt;code&gt;label&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;注意，要将内容添加在文件默认的 &lt;code&gt;[]&lt;/code&gt;  内，另外多个快捷键绑定内容间要以英文逗号间隔，最后一个快捷键绑定内容后面则无需逗号。&lt;/p&gt;
 &lt;p&gt;除了通过快捷键快速运行任务以外，还可以在 VScode 扩展商店中搜索 &lt;code&gt;tasks&lt;/code&gt;  安装扩展插件，该插件会将配置好的任务显示在 VScode 下方的状态栏中，点击即可一键使用。如果任务过多，可以查看点击安装的 task 扩展查看说明，隐藏一部分任务。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+            <title>Word-使用技巧</title>
+            <link>https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+            <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
+            <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
+            <category term="Word" scheme="https://yunian.top/categories/MyBlog/Tools/Word/" />
+            <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;word-使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word-使用技巧&#34;&gt;#&lt;/a&gt; Word - 使用技巧&lt;/h1&gt;
+&lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
+&lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分节符造成&lt;br&gt;
+  有时候使用 &lt;code&gt;【分节符】&lt;/code&gt; 也会产生空白页，此时无法直接删除空白页，需要先删除分节符：&lt;br&gt;
+  在 &lt;code&gt;【Office Word】&lt;/code&gt; 中，将视图切换为 &lt;code&gt;【草稿】&lt;/code&gt; 后，可以看到 &lt;code&gt;【分节符】&lt;/code&gt; 所产生的虚线，使用 &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中该行虚线，即可选中分节符将其删除。&lt;br&gt;
+   &lt;code&gt;【WPS文字】&lt;/code&gt; 不能切换视图为草稿，此时可以通过 &lt;code&gt;【查找替换】&lt;/code&gt; 功能 ( &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【F/H】&lt;/code&gt; )，可以找到文本中的分节符，将其替换 &lt;code&gt;【空格】&lt;/code&gt; 后，进而删除空白页。这个方法也可用于两个软件中多个空白页的删除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;英文直引号变成中文弯引号问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英文直引号变成中文弯引号问题&#34;&gt;#&lt;/a&gt; 英文直引号变成中文弯引号问题&lt;/h2&gt;
+&lt;p&gt;  这是文本校对设置导致的问题。&lt;br&gt;
+  WPS 文字中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【直引号替换为弯引号】&lt;/code&gt; 设置，取消勾选并确认设置即可。WPS 文字默认不勾选该项。&lt;br&gt;
+  而 Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到该选项并取消勾选，之后都点击确认即可完成设置。Office 默认勾选该项。&lt;/p&gt;
+&lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
+&lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
+&lt;h2 id=&#34;取消自动编号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取消自动编号&#34;&gt;#&lt;/a&gt; 取消自动编号&lt;/h2&gt;
+&lt;p&gt;  新使用的 Office Word 或者 WPS 文字往往开启了自动编号功能，在书写上一项后，按下 &lt;code&gt;【Enter】&lt;/code&gt; 回车即可生成下一项的序号。虽然自动编号有时候能方便书写，但自动编号的格式经常会引起排版不协调的问题，因此，建议关闭这个功能，手动编号。&lt;br&gt;
+  Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到 &lt;code&gt;【自动编号列表】&lt;/code&gt; 设置，取消勾选即可。&lt;br&gt;
+WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【键入时自动应用自动编号列表】&lt;/code&gt; 设置，取消勾选。&lt;/p&gt;
+&lt;h2 id=&#34;公式显示问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式显示问题&#34;&gt;#&lt;/a&gt; 公式显示问题&lt;/h2&gt;
+&lt;p&gt;  因为公式的行高一般并不与文字相同，尤其是使用了多元数学符号的公式，那么在全文设置 &lt;code&gt;【行距】&lt;/code&gt; 为 &lt;code&gt;【固定值】&lt;/code&gt; 时，公式就有可能无法正常显示，此时，选中公式这一行，单独将其 &lt;code&gt;【行距】&lt;/code&gt; 修改为 &lt;code&gt;【单倍行距】&lt;/code&gt; , 公式行就会以自适应的行高进行显示。&lt;/p&gt;
+&lt;h2 id=&#34;图片变形或隐藏问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片变形或隐藏问题&#34;&gt;#&lt;/a&gt; 图片变形或隐藏问题&lt;/h2&gt;
+&lt;p&gt;  图片显示问题通常是由于图片的文字环绕方式设置与 &lt;code&gt;【固定值】&lt;/code&gt; 行距的设置冲突。&lt;br&gt;
+  一般来说，图片插入后的默认文字环绕方式为嵌入式，图片占据一行进行显示，若此时行距设置为固定值，图片也只能在一行的固定高度下进行显示，所以就造成了图片变形，或者被隐藏而无法显示的问题。&lt;br&gt;
+  通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br&gt;
+  将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -1395,17 +1395,10 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
             <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
             <category term="Git" scheme="https://yunian.top/categories/MyBlog/Note/Git/" />
             <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;命令行操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#命令行操作&#34;&gt;#&lt;/a&gt; 命令行操作&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;# 删除对应名称的文件/文件夹
-git rm -r --cached 文件/文件夹名称
-
-# 提交到git
-git commit -m &#39;提交的操作描述&#39;
-
-# 推送到远程仓库
-git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;
- ]]></description>
+            <description><![CDATA[ &lt;h1 id=&#34;删除对应名称的文件文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除对应名称的文件文件夹&#34;&gt;#&lt;/a&gt; 删除对应名称的文件 / 文件夹&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--cached&lt;/span&gt; 文件/文件夹名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;提交到git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交到git&#34;&gt;#&lt;/a&gt; 提交到 git&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;提交的操作描述&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 推送到远程仓库&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://yunian.top/MyBlog/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
