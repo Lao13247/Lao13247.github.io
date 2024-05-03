@@ -8,7 +8,25 @@
     <author>
       <name>余年</name>
     </author>
-    <updated>2024-03-25T10:24:19.589Z</updated>
+    <updated>2024-05-03T14:34:25.325Z</updated>
+    <entry>
+        <id>https://yunian.top/MyBlog/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+        <title>Excel表格-基础使用</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h1 id=&#34;excel表格-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#excel表格-基础使用&#34;&gt;#&lt;/a&gt; Excel 表格 - 基础使用&lt;/h1&gt;
+&lt;h2 id=&#34;设置表格外部空白&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置表格外部空白&#34;&gt;#&lt;/a&gt; 设置表格外部空白&lt;/h2&gt;
+&lt;p&gt;有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。&lt;/p&gt;
+&lt;p&gt;实现该效果其实也很简单，只要将表格的框线根据需求设置好，在菜单区找到 &lt;code&gt;视图&lt;/code&gt; ，取消勾选 &lt;code&gt;网格线&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;h2 id=&#34;序号填充&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序号填充&#34;&gt;#&lt;/a&gt; 序号填充&lt;/h2&gt;
+&lt;p&gt;手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 &lt;code&gt;RAW()&lt;/code&gt;  函数根据行号设置序号。&lt;/p&gt;
+&lt;p&gt;单元格中的 &lt;code&gt;RAW()&lt;/code&gt;  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。&lt;/p&gt;
+</content>
+        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="Excel" scheme="https://yunian.top/tags/Excel/" />
+        <updated>2024-05-03T14:34:25.325Z</updated>
+    </entry>
     <entry>
         <id>https://yunian.top/MyBlog/Resources/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</id>
         <title>开发工具</title>
@@ -118,6 +136,15 @@
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="开发工具" scheme="https://yunian.top/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" />
+        <category term="C\C++" scheme="https://yunian.top/tags/C-C/" />
+        <category term="Python" scheme="https://yunian.top/tags/Python/" />
+        <category term="Java" scheme="https://yunian.top/tags/Java/" />
+        <category term="数据库" scheme="https://yunian.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+        <category term="服务器运维" scheme="https://yunian.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/" />
+        <category term="git" scheme="https://yunian.top/tags/git/" />
+        <category term="Unity" scheme="https://yunian.top/tags/Unity/" />
+        <category term="帆软报表" scheme="https://yunian.top/tags/%E5%B8%86%E8%BD%AF%E6%8A%A5%E8%A1%A8/" />
         <updated>2024-03-25T10:24:19.589Z</updated>
     </entry>
     <entry>
@@ -128,26 +155,30 @@
         <updated>2024-01-11T06:01:40.395Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0/</id>
-        <title>C++笔记——环境安装</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;h1 id=&#34;codeblocks安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#codeblocks安装&#34;&gt;#&lt;/a&gt; Codeblocks 安装&lt;/h1&gt;
+        <id>https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+        <title>C++笔记-环境搭建</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+        <content type="html">&lt;h1 id=&#34;c笔记-环境搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c笔记-环境搭建&#34;&gt;#&lt;/a&gt; C++ 笔记 - 环境搭建&lt;/h1&gt;
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
         <category term="C++" scheme="https://yunian.top/categories/MyBlog/Note/C/" />
-        <category term="技术" scheme="https://yunian.top/tags/%E6%8A%80%E6%9C%AF/" />
         <category term="C++" scheme="https://yunian.top/tags/C/" />
+        <category term="环境搭建" scheme="https://yunian.top/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" />
+        <category term="Codeblocks" scheme="https://yunian.top/tags/Codeblocks/" />
+        <category term="Mingw" scheme="https://yunian.top/tags/Mingw/" />
+        <category term="VScode" scheme="https://yunian.top/tags/VScode/" />
         <updated>2024-01-07T03:38:47.754Z</updated>
     </entry>
     <entry>
         <id>https://yunian.top/MyBlog/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/</id>
         <title>FineReport-常用样式</title>
         <link rel="alternate" href="https://yunian.top/MyBlog/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/"/>
-        <content type="html">&lt;h1 id=&#34;控件显示值拼接数据集多个字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#控件显示值拼接数据集多个字段&#34;&gt;#&lt;/a&gt; 控件显示值拼接数据集多个字段&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;finereport-常用样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#finereport-常用样式&#34;&gt;#&lt;/a&gt; FineReport - 常用样式&lt;/h1&gt;
+&lt;h2 id=&#34;控件显示值拼接数据集多个字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#控件显示值拼接数据集多个字段&#34;&gt;#&lt;/a&gt; 控件显示值拼接数据集多个字段&lt;/h2&gt;
 &lt;p&gt;在帆软报表中，控件的显示值往往需要拼接数据库中某业务值的代码及其中文描述等，因此可以使用 &lt;code&gt;VALUE&lt;/code&gt;  函数，将数据集中的代码和中文描述两个字段拼接作为控件的显示值，显示值设置公式如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;VALUE(&amp;quot;costTitle&amp;quot;, 2, 1, $$$) + &amp;quot;-&amp;quot; + $$$&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;日期处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期处理&#34;&gt;#&lt;/a&gt; 日期处理&lt;/h1&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## 上月&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date (year (today ()),MONTH (today ())-1,day (today ()))&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;前置条件切换日期控件显示级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前置条件切换日期控件显示级别&#34;&gt;#&lt;/a&gt; 前置条件切换日期控件显示级别&lt;/h1&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;VALUE(&amp;quot;costTitle&amp;quot;, 2, 1, $$$) + &amp;quot;-&amp;quot; + $$$&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;日期处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期处理&#34;&gt;#&lt;/a&gt; 日期处理&lt;/h2&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## 上月&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date (year (today ()),MONTH (today ())-1,day (today ()))&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;前置条件切换日期控件显示级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前置条件切换日期控件显示级别&#34;&gt;#&lt;/a&gt; 前置条件切换日期控件显示级别&lt;/h2&gt;
 &lt;p&gt;业务需求是根据某个条件控件来控制日期控件格式为 &lt;code&gt;年月日&lt;/code&gt; 或者 &lt;code&gt;年月&lt;/code&gt; 等不同的级别，从而实现在同一张报表上根据选择的条件来展示不同维度下的数据，而不用切换 sheet 页或者报表，减少用户对于其他报表参数的操作，提升用户体验。&lt;/p&gt;
 &lt;p&gt;以下业务场景是在成本报表中，根据两种时间维度的数据类型来控制日期控件格式，其中 &lt;code&gt;AC&lt;/code&gt;  和 &lt;code&gt;AX&lt;/code&gt;  类型为月成本数据，则日期控件格式为 &lt;code&gt;年月&lt;/code&gt; ，而 &lt;code&gt;AD&lt;/code&gt;  和 &lt;code&gt;AE&lt;/code&gt;  类型则为日成本数据，日期控件格式为 &lt;code&gt;年月日&lt;/code&gt; ，并调整报表中相关单元格获取对应日期控件的值。&lt;/p&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#x2F;&amp;#x2F; 在前置条件的控件中添加 JS 事件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var form &amp;#x3D; this.options.form;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p1Widget &amp;#x3D; form.getWidgetByName (&amp;quot;会计区间月&amp;quot;); &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p2Widget &amp;#x3D; form.getWidgetByName (&amp;quot;Label 会计区间月&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p3Widget &amp;#x3D; form.getWidgetByName (&amp;quot;会计区间日&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p4Widget &amp;#x3D; form.getWidgetByName (&amp;quot;Label 会计区间日&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var value &amp;#x3D; this.getValue (); &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;if (value &amp;#x3D;&amp;#x3D; &amp;quot;AC&amp;quot; || value &amp;#x3D;&amp;#x3D; &amp;quot;AX&amp;quot;) &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125; else if (value &amp;#x3D;&amp;#x3D; &amp;quot;AD&amp;quot; || value &amp;#x3D;&amp;#x3D; &amp;quot;AE&amp;quot; ) &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125; else &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;报表单元格中的日期表头显示调整：&lt;/p&gt;
@@ -230,6 +261,9 @@
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="Hexo官方" scheme="https://yunian.top/tags/Hexo%E5%AE%98%E6%96%B9/" />
+        <category term="Hexo插件" scheme="https://yunian.top/tags/Hexo%E6%8F%92%E4%BB%B6/" />
+        <category term="图床" scheme="https://yunian.top/tags/%E5%9B%BE%E5%BA%8A/" />
         <updated>2023-12-22T04:22:25.474Z</updated>
     </entry>
     <entry>
@@ -297,7 +331,7 @@
         <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
         <category term="公开课" scheme="https://yunian.top/tags/%E5%85%AC%E5%BC%80%E8%AF%BE/" />
         <category term="图书" scheme="https://yunian.top/tags/%E5%9B%BE%E4%B9%A6/" />
-        <category term="资料" scheme="https://yunian.top/tags/%E8%B5%84%E6%96%99/" />
+        <category term="论文" scheme="https://yunian.top/tags/%E8%AE%BA%E6%96%87/" />
         <updated>2023-12-22T04:19:24.864Z</updated>
     </entry>
     <entry>
@@ -412,8 +446,8 @@
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
         <category term="资源" scheme="https://yunian.top/tags/%E8%B5%84%E6%BA%90/" />
-        <category term="软件" scheme="https://yunian.top/tags/%E8%BD%AF%E4%BB%B6/" />
-        <category term="工具" scheme="https://yunian.top/tags/%E5%B7%A5%E5%85%B7/" />
+        <category term="系统工具" scheme="https://yunian.top/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/" />
+        <category term="在线工具" scheme="https://yunian.top/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" />
         <category term="影视" scheme="https://yunian.top/tags/%E5%BD%B1%E8%A7%86/" />
         <category term="音乐" scheme="https://yunian.top/tags/%E9%9F%B3%E4%B9%90/" />
         <updated>2023-12-22T04:17:16.754Z</updated>
@@ -483,12 +517,12 @@
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
-        <category term="资源" scheme="https://yunian.top/tags/%E8%B5%84%E6%BA%90/" />
         <category term="图片" scheme="https://yunian.top/tags/%E5%9B%BE%E7%89%87/" />
+        <category term="图标" scheme="https://yunian.top/tags/%E5%9B%BE%E6%A0%87/" />
         <category term="字体" scheme="https://yunian.top/tags/%E5%AD%97%E4%BD%93/" />
         <category term="音效" scheme="https://yunian.top/tags/%E9%9F%B3%E6%95%88/" />
         <category term="素材" scheme="https://yunian.top/tags/%E7%B4%A0%E6%9D%90/" />
-        <category term="后期" scheme="https://yunian.top/tags/%E5%90%8E%E6%9C%9F/" />
+        <category term="视频后期" scheme="https://yunian.top/tags/%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F/" />
         <updated>2023-12-16T02:00:07.558Z</updated>
     </entry>
     <entry>
@@ -1088,17 +1122,56 @@
         <updated>2023-12-14T06:41:31.504Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/Word/Word-%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80/</id>
-        <title>Word-软件基础</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Word/Word-%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80/"/>
-        <content type="html">&lt;h1 id=&#34;word-软件基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word-软件基础&#34;&gt;#&lt;/a&gt; Word - 软件基础&lt;/h1&gt;
+        <id>https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+        <title>Word文档-基础使用</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h1 id=&#34;word文档-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-基础使用&#34;&gt;#&lt;/a&gt; Word 文档 - 基础使用&lt;/h1&gt;
 &lt;h2 id=&#34;标题的目录大纲级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题的目录大纲级别&#34;&gt;#&lt;/a&gt; 标题的目录 (大纲) 级别&lt;/h2&gt;
 &lt;p&gt;  目录能够让文档的结构和主题一目了然，让阅读者更快了解文档的内容和找到所需内容的位置。Word 和 WPS 文字中都有自动生成目录的功能。但在生成目录之前，需要做的准备工作就是对文档中的多级标题设置其在目录 (大纲) 中的显示级别，这样自动生成的目录就会拥有分级效果。&lt;/p&gt;
+&lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
+&lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="Word" scheme="https://yunian.top/categories/MyBlog/Tools/Word/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="Word" scheme="https://yunian.top/tags/Word/" />
         <updated>2023-10-27T07:27:05.222Z</updated>
+    </entry>
+    <entry>
+        <id>https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</id>
+        <title>Word文档-问题处理</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/"/>
+        <content type="html">&lt;h1 id=&#34;word文档-问题处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-问题处理&#34;&gt;#&lt;/a&gt; Word 文档 - 问题处理&lt;/h1&gt;
+&lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
+&lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分节符造成&lt;br&gt;
+  有时候使用 &lt;code&gt;【分节符】&lt;/code&gt; 也会产生空白页，此时无法直接删除空白页，需要先删除分节符：&lt;br&gt;
+  在 &lt;code&gt;【Office Word】&lt;/code&gt; 中，将视图切换为 &lt;code&gt;【草稿】&lt;/code&gt; 后，可以看到 &lt;code&gt;【分节符】&lt;/code&gt; 所产生的虚线，使用 &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中该行虚线，即可选中分节符将其删除。&lt;br&gt;
+   &lt;code&gt;【WPS文字】&lt;/code&gt; 不能切换视图为草稿，此时可以通过 &lt;code&gt;【查找替换】&lt;/code&gt; 功能 ( &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【F/H】&lt;/code&gt; )，可以找到文本中的分节符，将其替换 &lt;code&gt;【空格】&lt;/code&gt; 后，进而删除空白页。这个方法也可用于两个软件中多个空白页的删除。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;英文直引号变成中文弯引号问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英文直引号变成中文弯引号问题&#34;&gt;#&lt;/a&gt; 英文直引号变成中文弯引号问题&lt;/h2&gt;
+&lt;p&gt;  这是文本校对设置导致的问题。&lt;br&gt;
+  WPS 文字中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【直引号替换为弯引号】&lt;/code&gt; 设置，取消勾选并确认设置即可。WPS 文字默认不勾选该项。&lt;br&gt;
+  而 Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到该选项并取消勾选，之后都点击确认即可完成设置。Office 默认勾选该项。&lt;/p&gt;
+&lt;h2 id=&#34;取消自动编号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取消自动编号&#34;&gt;#&lt;/a&gt; 取消自动编号&lt;/h2&gt;
+&lt;p&gt;  新使用的 Office Word 或者 WPS 文字往往开启了自动编号功能，在书写上一项后，按下 &lt;code&gt;【Enter】&lt;/code&gt; 回车即可生成下一项的序号。虽然自动编号有时候能方便书写，但自动编号的格式经常会引起排版不协调的问题，因此，建议关闭这个功能，手动编号。&lt;br&gt;
+  Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到 &lt;code&gt;【自动编号列表】&lt;/code&gt; 设置，取消勾选即可。&lt;br&gt;
+WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【键入时自动应用自动编号列表】&lt;/code&gt; 设置，取消勾选。&lt;/p&gt;
+&lt;h2 id=&#34;公式显示问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式显示问题&#34;&gt;#&lt;/a&gt; 公式显示问题&lt;/h2&gt;
+&lt;p&gt;  因为公式的行高一般并不与文字相同，尤其是使用了多元数学符号的公式，那么在全文设置 &lt;code&gt;【行距】&lt;/code&gt; 为 &lt;code&gt;【固定值】&lt;/code&gt; 时，公式就有可能无法正常显示，此时，选中公式这一行，单独将其 &lt;code&gt;【行距】&lt;/code&gt; 修改为 &lt;code&gt;【单倍行距】&lt;/code&gt; , 公式行就会以自适应的行高进行显示。&lt;/p&gt;
+&lt;h2 id=&#34;图片变形或隐藏问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片变形或隐藏问题&#34;&gt;#&lt;/a&gt; 图片变形或隐藏问题&lt;/h2&gt;
+&lt;p&gt;  图片显示问题通常是由于图片的文字环绕方式设置与 &lt;code&gt;【固定值】&lt;/code&gt; 行距的设置冲突。&lt;br&gt;
+  一般来说，图片插入后的默认文字环绕方式为嵌入式，图片占据一行进行显示，若此时行距设置为固定值，图片也只能在一行的固定高度下进行显示，所以就造成了图片变形，或者被隐藏而无法显示的问题。&lt;br&gt;
+  通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br&gt;
+  将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
+</content>
+        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="Word" scheme="https://yunian.top/tags/Word/" />
+        <category term="空白页" scheme="https://yunian.top/tags/%E7%A9%BA%E7%99%BD%E9%A1%B5/" />
+        <updated>2023-10-27T07:27:05.221Z</updated>
     </entry>
     <entry>
         <id>https://yunian.top/MyBlog/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</id>
@@ -1145,42 +1218,6 @@
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
         <category term="VScode" scheme="https://yunian.top/categories/MyBlog/Tools/VScode/" />
-        <updated>2023-10-27T07:27:05.221Z</updated>
-    </entry>
-    <entry>
-        <id>https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
-        <title>Word-使用技巧</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Word/Word-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-        <content type="html">&lt;h1 id=&#34;word-使用技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word-使用技巧&#34;&gt;#&lt;/a&gt; Word - 使用技巧&lt;/h1&gt;
-&lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
-&lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;分节符造成&lt;br&gt;
-  有时候使用 &lt;code&gt;【分节符】&lt;/code&gt; 也会产生空白页，此时无法直接删除空白页，需要先删除分节符：&lt;br&gt;
-  在 &lt;code&gt;【Office Word】&lt;/code&gt; 中，将视图切换为 &lt;code&gt;【草稿】&lt;/code&gt; 后，可以看到 &lt;code&gt;【分节符】&lt;/code&gt; 所产生的虚线，使用 &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中该行虚线，即可选中分节符将其删除。&lt;br&gt;
-   &lt;code&gt;【WPS文字】&lt;/code&gt; 不能切换视图为草稿，此时可以通过 &lt;code&gt;【查找替换】&lt;/code&gt; 功能 ( &lt;code&gt;【Ctrl】&lt;/code&gt; + &lt;code&gt;【F/H】&lt;/code&gt; )，可以找到文本中的分节符，将其替换 &lt;code&gt;【空格】&lt;/code&gt; 后，进而删除空白页。这个方法也可用于两个软件中多个空白页的删除。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;英文直引号变成中文弯引号问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英文直引号变成中文弯引号问题&#34;&gt;#&lt;/a&gt; 英文直引号变成中文弯引号问题&lt;/h2&gt;
-&lt;p&gt;  这是文本校对设置导致的问题。&lt;br&gt;
-  WPS 文字中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【直引号替换为弯引号】&lt;/code&gt; 设置，取消勾选并确认设置即可。WPS 文字默认不勾选该项。&lt;br&gt;
-  而 Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到该选项并取消勾选，之后都点击确认即可完成设置。Office 默认勾选该项。&lt;/p&gt;
-&lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
-&lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
-&lt;h2 id=&#34;取消自动编号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取消自动编号&#34;&gt;#&lt;/a&gt; 取消自动编号&lt;/h2&gt;
-&lt;p&gt;  新使用的 Office Word 或者 WPS 文字往往开启了自动编号功能，在书写上一项后，按下 &lt;code&gt;【Enter】&lt;/code&gt; 回车即可生成下一项的序号。虽然自动编号有时候能方便书写，但自动编号的格式经常会引起排版不协调的问题，因此，建议关闭这个功能，手动编号。&lt;br&gt;
-  Office Word 中，在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【校对】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【键入时自动套用格式】&lt;/code&gt; 找到 &lt;code&gt;【自动编号列表】&lt;/code&gt; 设置，取消勾选即可。&lt;br&gt;
-WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【编辑】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自动更正】&lt;/code&gt; 即可找到 &lt;code&gt;【键入时自动应用自动编号列表】&lt;/code&gt; 设置，取消勾选。&lt;/p&gt;
-&lt;h2 id=&#34;公式显示问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公式显示问题&#34;&gt;#&lt;/a&gt; 公式显示问题&lt;/h2&gt;
-&lt;p&gt;  因为公式的行高一般并不与文字相同，尤其是使用了多元数学符号的公式，那么在全文设置 &lt;code&gt;【行距】&lt;/code&gt; 为 &lt;code&gt;【固定值】&lt;/code&gt; 时，公式就有可能无法正常显示，此时，选中公式这一行，单独将其 &lt;code&gt;【行距】&lt;/code&gt; 修改为 &lt;code&gt;【单倍行距】&lt;/code&gt; , 公式行就会以自适应的行高进行显示。&lt;/p&gt;
-&lt;h2 id=&#34;图片变形或隐藏问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片变形或隐藏问题&#34;&gt;#&lt;/a&gt; 图片变形或隐藏问题&lt;/h2&gt;
-&lt;p&gt;  图片显示问题通常是由于图片的文字环绕方式设置与 &lt;code&gt;【固定值】&lt;/code&gt; 行距的设置冲突。&lt;br&gt;
-  一般来说，图片插入后的默认文字环绕方式为嵌入式，图片占据一行进行显示，若此时行距设置为固定值，图片也只能在一行的固定高度下进行显示，所以就造成了图片变形，或者被隐藏而无法显示的问题。&lt;br&gt;
-  通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br&gt;
-  将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
-</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="Word" scheme="https://yunian.top/categories/MyBlog/Tools/Word/" />
         <updated>2023-10-27T07:27:05.221Z</updated>
     </entry>
     <entry>
@@ -1315,12 +1352,13 @@ Markdown 文档支持两种 HTML 注释方法：一种是 HTML 支持的注释�
         <updated>2023-10-27T07:27:05.216Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
-        <title>数据库-SQL基础语法</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-        <content type="html">&lt;h1 id=&#34;创建数据表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据表&#34;&gt;#&lt;/a&gt; 创建数据表&lt;/h1&gt;
+        <id>https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
+        <title>数据库管理-SQL基础语法</title>
+        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;数据库管理-sql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库管理-sql基础语法&#34;&gt;#&lt;/a&gt; 数据库管理 - SQL 基础语法&lt;/h1&gt;
+&lt;h2 id=&#34;创建数据表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据表&#34;&gt;#&lt;/a&gt; 创建数据表&lt;/h2&gt;
 &lt;p&gt;数据表是数据存储的基本结构之一，支持查询、修改、删除和新增等多种数据操作，也能与其他的数据表建立关联，实现多表操作。&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 创建表 (基础)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; tableName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    column1 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn2 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn3 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;数据插入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据插入&#34;&gt;#&lt;/a&gt; 数据插入&lt;/h1&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 创建表 (基础)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; tableName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    column1 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn2 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn3 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数据插入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据插入&#34;&gt;#&lt;/a&gt; 数据插入&lt;/h2&gt;
 &lt;h3 id=&#34;1-insert-into&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-insert-into&#34;&gt;#&lt;/a&gt; 1. INSERT INTO&lt;/h3&gt;
 &lt;p&gt;在 DB2 等数据库中，向表中插入新数据常用的是 SQL 基础语法中的 INSERT INTO 语句。&lt;br&gt;
 INSERT INTO 语句要求要插入数据的表 (tableName) 必须是存在的。该语句可以实现一行记录的导入或多行记录的批量导入，还可以指定更新的数据列等。指定列名时，可以只插入列出字段的数据，不指定列名和列序时，需要按照表结构设计的字段顺序和列数在 VALUES 排列好所有要插入的数据值。另外，还可以和 SELECT 查询语句关联，可将查询表中查询出的数据按照格式插入到目标表中。&lt;/p&gt;
@@ -1341,15 +1379,15 @@ SELECT Afield1,Afield2,Afield3,...
 FROM TableA
 [WHERE Afield1 = &amp;quot;&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2select-into&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2select-into&#34;&gt;#&lt;/a&gt; 2.SELECT INTO&lt;/h1&gt;
+&lt;h3 id=&#34;2select-into&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2select-into&#34;&gt;#&lt;/a&gt; 2.SELECT INTO&lt;/h3&gt;
 &lt;p&gt;SELECT INTO 可以从已有的表中查询出数据放入新表中，往往用于表的信息复制。不过有些数据库如 DB2、MySQL 等不支持 SELECT INTO 语句，因此，使用时需要注意数据库是否支持该语句。&lt;br&gt;
 INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 SELECT INTO 语句要求查询表存在，而目标表不能存在，目标表会在数据插入时创建。&lt;/p&gt;
 </content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
         <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
         <category term="数据库" scheme="https://yunian.top/categories/MyBlog/Note/Database/" />
-        <category term="技术笔记" scheme="https://yunian.top/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" />
         <category term="数据库" scheme="https://yunian.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+        <category term="技术笔记" scheme="https://yunian.top/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" />
         <category term="SQL" scheme="https://yunian.top/tags/SQL/" />
         <updated>2023-10-27T07:27:05.164Z</updated>
     </entry>
@@ -1357,7 +1395,8 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
         <id>https://yunian.top/MyBlog/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/</id>
         <title>帆软服务器运维</title>
         <link rel="alternate" href="https://yunian.top/MyBlog/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/"/>
-        <content type="html">&lt;h1 id=&#34;重启帆软服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重启帆软服务器&#34;&gt;#&lt;/a&gt; 重启帆软服务器&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;帆软服务器运维&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#帆软服务器运维&#34;&gt;#&lt;/a&gt; 帆软服务器运维&lt;/h1&gt;
+&lt;h2 id=&#34;重启帆软服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重启帆软服务器&#34;&gt;#&lt;/a&gt; 重启帆软服务器&lt;/h2&gt;
 &lt;p&gt;帆软因某些报表崩溃或者内存占用过高导致服务器宕机时，使用 shell 工具连接帆软服务器进入指定目录，重启帆软内置的 tomcat 服务器：&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 进入指定目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; /apps/tomcat-linux/bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 运行 tomcat 服务器启动脚本&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./startup.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
@@ -1396,52 +1435,5 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
         <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
         <category term="Git" scheme="https://yunian.top/categories/MyBlog/Note/Git/" />
         <updated>2023-10-27T07:27:05.154Z</updated>
-    </entry>
-    <entry>
-        <id>https://yunian.top/MyBlog/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
-        <title>Python-环境搭建</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-        <content type="html">&lt;h1 id=&#34;python开发环境搭建一&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#python开发环境搭建一&#34;&gt;#&lt;/a&gt; Python 开发环境搭建（一）&lt;/h1&gt;
-&lt;p&gt;Anaconda 和 Pycharm 两个可以作为 Python 集成开发环境，Anaconda 可以很方便地管理不同版本的 python 语言环境和依赖包的导入等，Pycharm 则是 Jetbrains 公司发行的 python 工程集成开发软件，功能强大，能够胜任各种需求的开发任务。&lt;/p&gt;
-&lt;h2 id=&#34;一-pycharm安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-pycharm安装&#34;&gt;#&lt;/a&gt; 一、 Pycharm 安装&lt;/h2&gt;
-&lt;p&gt;Pycharm 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamV0YnJhaW5zLmNvbS9weWNoYXJtL2Rvd25sb2FkLyNzZWN0aW9uPXdpbmRvd3M=&#34;&gt;https://www.jetbrains.com/pycharm/download/#section=windows&lt;/span&gt;&lt;br&gt;
-Pycharm 社区版免费下载，可以满足大部分的使用需求。&lt;/p&gt;
-&lt;p&gt;Pycharm 2021.3 Community 社区版下载安装：&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/28/pGnP6F4rgbXHvif.png&#34; alt=&#34;Pycharm下载&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/4q2yWLZDgof6czu.png&#34; alt=&#34;Pycharm安装-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;选择安装目录，不建议直接安装在系统盘&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/stPncSQY7ReZx4X.png&#34; alt=&#34;Pycharm安装-2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;勾选需要的设置后，进行下一步&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/zEwbJMWnrUv25Ks.png&#34; alt=&#34;Pycharm安装-3&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/YZ93gbmMji57G8H.png&#34; alt=&#34;Pycharm安装-4&#34;&gt;&lt;/p&gt;
-&lt;p&gt;最后需要重启计算机，才算完成 Pycharm 的安装，但是可以推迟重启&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/EzLnGSDiodu7hX2.png&#34; alt=&#34;Pycharm安装-5&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;二-anaconda安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-anaconda安装&#34;&gt;#&lt;/a&gt; 二、Anaconda 安装&lt;/h2&gt;
-&lt;p&gt;Anaconda 官网的下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYW5hY29uZGEuY29tL3Byb2R1Y3RzL2luZGl2aWR1YWw=&#34;&gt;https://www.anaconda.com/products/individual&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Anaconda Navigator 2.1.1 下载安装:&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/SopeiCtGL5XMIDk.png&#34; alt=&#34;Anaconda下载&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N2nUu4vWy8L5xso.png&#34; alt=&#34;Anaconda安装-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;同意用户协议，否则无法进行下一步&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/mtiZvQDW1Mu5RKF.png&#34; alt=&#34;Anaconda安装-2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;建议选择为所有用户（All Users）安装&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/nV8tFv6ojXIY9ar.png&#34; alt=&#34;Anaconda安装-3&#34;&gt;&lt;/p&gt;
-&lt;p&gt;选择安装目录&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/JWLXi9NKvqzGTgB.png&#34; alt=&#34;Anaconda安装-4&#34;&gt;&lt;br&gt;
- 第一个选项为自动配置系统环境变量，第二个选项为 Anaconda 默认安装的语言环境为 python3.9，之后默认下一步即可&lt;br&gt;
-&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/QwrPMnpbSsTUEDB.png&#34; alt=&#34;Anaconda安装-5&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/1BR5jxLdKvACHGh.png&#34; alt=&#34;Anaconda安装-6&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/N9uzOpR2ey6S4cV.png&#34; alt=&#34;Anaconda安装-7&#34;&gt;&lt;/p&gt;
-&lt;p&gt;这里两个选项都可以不用勾选&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/Mtz4wKWG2TljyoI.png&#34; alt=&#34;Anaconda安装-8&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="Python开发" scheme="https://yunian.top/categories/MyBlog/Note/Python%E5%BC%80%E5%8F%91/" />
-        <category term="技术笔记" scheme="https://yunian.top/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" />
-        <category term="环境搭建" scheme="https://yunian.top/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" />
-        <category term="Python" scheme="https://yunian.top/tags/Python/" />
-        <category term="Pycharm" scheme="https://yunian.top/tags/Pycharm/" />
-        <category term="Anaconda" scheme="https://yunian.top/tags/Anaconda/" />
-        <updated>2022-01-11T03:06:45.000Z</updated>
     </entry>
 </feed>
