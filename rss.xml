@@ -10,8 +10,30 @@
         </author>
         <description>学习笔记和随笔记录</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 03 May 2024 22:34:25 +0800</pubDate>
-        <lastBuildDate>Fri, 03 May 2024 22:34:25 +0800</lastBuildDate>
+        <pubDate>Tue, 07 May 2024 09:46:37 +0800</pubDate>
+        <lastBuildDate>Tue, 07 May 2024 09:46:37 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://yunian.top/MyBlog/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</guid>
+            <title>系统使用</title>
+            <link>https://yunian.top/MyBlog/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</link>
+            <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
+            <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
+            <category term="Windows" scheme="https://yunian.top/categories/MyBlog/Tools/Windows/" />
+            <category term="软件使用" scheme="https://yunian.top/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" />
+            <category term="Windows" scheme="https://yunian.top/tags/Windows/" />
+            <pubDate>Tue, 07 May 2024 09:46:37 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;系统使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统使用&#34;&gt;#&lt;/a&gt; 系统使用&lt;/h1&gt;
+&lt;h2 id=&#34;彻底删除启动项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#彻底删除启动项&#34;&gt;#&lt;/a&gt; 彻底删除启动项&lt;/h2&gt;
+&lt;p&gt;对电脑中开机自启动的程序进行管理，可以减少不必要的资源性能占用。在 &lt;code&gt;任务管理器&lt;/code&gt; 中，选择 &lt;code&gt;启动&lt;/code&gt; 一栏，可以看到自启动程序列表，每个程序的 &lt;code&gt;命令行&lt;/code&gt; 则可以看到其自启动文件的所在目录。&lt;/p&gt;
+&lt;p&gt;之前清理启动项时，有一个 &lt;code&gt;program&lt;/code&gt;  启动项不确定是什么程序，因此百度了一番，确定了它是 &lt;code&gt;微软Teams&lt;/code&gt;  程序的残留，然后发现了不需要的启动项都可以通过删除文件及其注册表项的方法彻底禁用，这个方法可以将流氓程序彻底卸载而不用担心死灰复燃。&lt;/p&gt;
+&lt;p&gt;具体操作方法为：根据启动项中程序的 &lt;code&gt;命令行&lt;/code&gt; 信息，首先找到自启动文件的目录，将其全部删除，再通过 &lt;code&gt;Windows&lt;/code&gt;  和 &lt;code&gt;R&lt;/code&gt;  的快捷键打开 &lt;code&gt;运行&lt;/code&gt; 窗口，输入 &lt;code&gt;regedit&lt;/code&gt;  打开 &lt;code&gt;注册表编辑器&lt;/code&gt; ，检查下面启动项相关的三个地方的注册表信息：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;计算机&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;HKEY_CURRENT_USER&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;SOFTWARE&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Microsoft&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Windows&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;CurrentVersion&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;计算机&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;HKEY_LOCAL_MACHINE&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;SOFTWARE&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Microsoft&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Windows&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;CurrentVersion&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;计算机&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;HKEY_LOCAL_MACHINE&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;SOFTWARE&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;WOW6432Node&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Microsoft&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Windows&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;CurrentVersion&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;Run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;找到 &lt;code&gt;自启动程序&lt;/code&gt; 命令行所对应的注册表信息，右键选择将其删除即可。&lt;/p&gt;
+&lt;h2 id=&#34;窗口移动到屏幕外无法操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗口移动到屏幕外无法操作&#34;&gt;#&lt;/a&gt; 窗口移动到屏幕外无法操作&lt;/h2&gt;
+&lt;p&gt;有些窗口拖动到了屏幕外导致无法用鼠标再操作移动，此时可以通过键盘将窗口移回屏幕内。&lt;/p&gt;
+&lt;p&gt;首先用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;tab&lt;/code&gt;  快捷键切换到需要移动的窗口，再用 &lt;code&gt;alt&lt;/code&gt;  和 &lt;code&gt;space空格&lt;/code&gt; 快捷键激活窗口操作菜单， &lt;code&gt;鼠标左键&lt;/code&gt; 单击菜单中的 &lt;code&gt;移动&lt;/code&gt; 一项，将窗口拉长一部分到屏幕内，或者按 &lt;code&gt;M&lt;/code&gt;  键再使用方向键上下移动窗口到屏幕内，即可重新操作窗口。&lt;/p&gt;
+&lt;h2 id=&#34;设置u盘图标及文件夹图标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置u盘图标及文件夹图标&#34;&gt;#&lt;/a&gt; 设置 U 盘图标及文件夹图标&lt;/h2&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://yunian.top/MyBlog/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</guid>
             <title>Excel表格-基础使用</title>
@@ -251,6 +273,10 @@
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;prismjs&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/kRwY7MyHbg9sSAI.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34;&gt;Prismjs-代码高亮&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;Hexo插件&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;algolia&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWxnb2xpYS5jb20v&#34; data-background-image=&#34;https://s2.loli.net/2024/05/15/9UxK2qWgBEdFhGS.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWxnb2xpYS5jb20v&#34;&gt;Algolia-站内搜索&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;Hexo插件&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;图床&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图床&#34;&gt;#&lt;/a&gt; 图床&lt;/h1&gt;
@@ -1425,19 +1451,6 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br&gt;
  其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;/p&gt;
 &lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;添加定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;删除定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;r&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;显示定时计划列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;编辑定时计划内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://yunian.top/MyBlog/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-            <title>Git-常用命令</title>
-            <link>https://yunian.top/MyBlog/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-            <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-            <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-            <category term="Git" scheme="https://yunian.top/categories/MyBlog/Note/Git/" />
-            <pubDate>Fri, 27 Oct 2023 15:27:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;删除对应名称的文件文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除对应名称的文件文件夹&#34;&gt;#&lt;/a&gt; 删除对应名称的文件 / 文件夹&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--cached&lt;/span&gt; 文件/文件夹名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;提交到git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交到git&#34;&gt;#&lt;/a&gt; 提交到 git&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;提交的操作描述&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 推送到远程仓库&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>
