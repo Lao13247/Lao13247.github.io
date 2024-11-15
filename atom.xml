@@ -10,16 +10,55 @@
     </author>
     <updated>2024-10-12T17:15:40.166Z</updated>
     <entry>
-        <id>https://yunian.top/MyBlog/Hexo/%E6%96%87%E7%AB%A0%E9%85%8D%E7%BD%AE/</id>
-        <title></title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Hexo/%E6%96%87%E7%AB%A0%E9%85%8D%E7%BD%AE/"/>
-        <content type="html"></content>
+        <id>https://yunian.top/Hexo/3%E3%80%81Hexo%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2/</id>
+        <title>3、Hexo线上部署</title>
+        <link rel="alternate" href="https://yunian.top/Hexo/3%E3%80%81Hexo%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2/"/>
+        <content type="html">&lt;h1 id=&#34;线上部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线上部署&#34;&gt;#&lt;/a&gt; 线上部署&lt;/h1&gt;
+&lt;p&gt;本地部署的博客站点只能在一台设备上浏览，要随时随地查看或者分享给其他人还需要将博客发布到线上。&lt;/p&gt;
+&lt;p&gt;线上部署博客可以通过架设自己的云服务器或者借助 Github、Gitee 平台等。因为云服务器的设备、带宽及流量等都是收费的，而 Gitee 虽然适合国内访问，但是更新内容时仍然需要手动部署，服务也时常关闭，所以体验并不好。&lt;/p&gt;
+&lt;p&gt;而 Github 平台的 Pages 服务可以免费托管 Hexo 框架搭建的个人网站，并且支持配置个人域名访问，所以很适合个人的博客分享。&lt;/p&gt;
+&lt;h2 id=&#34;注册账号及创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注册账号及创建仓库&#34;&gt;#&lt;/a&gt; 注册账号及创建仓库&lt;/h2&gt;
+&lt;p&gt;首先在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tLw==&#34;&gt; Github 平台&lt;/span&gt;使用邮箱注册一个账号，之后根据下面的步骤创建用于博客部署的仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/08/MOSNFKTgJwIWf7r.png&#34; alt=&#34;NewRepo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/09/rNnyaYj36BFHWwO.png&#34; alt=&#34;RepoInfo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;创建好仓库以后，打开仓库，复制 SSH 方式的仓库地址。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/09/QxEGrW78L5Y9zIm.png&#34; alt=&#34;CopyRepoSSH&#34;&gt;&lt;/p&gt;
+&lt;p&gt;打开博客文件夹，编辑站点全局配置文件 &lt;code&gt;config.yml&lt;/code&gt;  中的 &lt;code&gt;deploy&lt;/code&gt;  配置项如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;git&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git@github.com&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;yunian13247/yunian13247.github.io.git&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将上面的 &lt;code&gt;github&lt;/code&gt;  的仓库地址替换为前面复制的 SSH 方式的仓库地址即可绑定远程仓库。&lt;/p&gt;
+&lt;p&gt;使用 SSH 方式的好处是推送到远程仓库时无需账号登录，代码托管平台会验证本机所对应的公钥和私钥来识别推送方，所以现在先生成一下公钥和私钥。&lt;/p&gt;
+&lt;p&gt;打开路径为 &lt;code&gt;C:\Users\用户名\.ssh&lt;/code&gt;  的目录，如没有这个文件夹可以新建一个。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;.ssh&lt;/code&gt;  目录下打开 Bash 控制台，输入以下命令（将示例邮箱替换为 github 登录用的邮箱）生成密钥：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ssh-keygen &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; rsa &lt;span class=&#34;token parameter variable&#34;&gt;-C&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;example@163.com&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/shWoTDuyBAU1rbZ.png&#34; alt=&#34;SSH-Key&#34;&gt;&lt;/p&gt;
+&lt;p&gt;保存密钥的文件名称默认为 &lt;code&gt;id_rsa&lt;/code&gt; ，如果只配置单个 SSH 密钥，可以直接回车确认，使用默认文件名生成密钥。若有多个密钥的需求，文件名必须修改，要不然每次默认文件名生成的密钥仅会覆盖旧密钥。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/Rz73xMgarjsZykv.png&#34; alt=&#34;SSH-RsaName&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之后是输入 SSH 密码以及确认密码，建议不设置，否则推送时可能还要输入密码，失去了 SSH 免登录的便捷。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/qD94SMkGiBlWcVp.png&#34; alt=&#34;SSH-RsaPassword&#34;&gt;&lt;/p&gt;
+&lt;p&gt;到下面这个页面就是密钥成功生成了，可以打开 &lt;code&gt;C:\Users\用户名\.ssh&lt;/code&gt;  目录查看，打开对应的文件名后缀为 &lt;code&gt;.pub&lt;/code&gt;  的公钥文件，使用&lt;span class=&#34;kbd&#34;&gt; Ctrl&lt;/span&gt;+&lt;span class=&#34;kbd&#34;&gt;A&lt;/span&gt; 快捷键选中全部内容进行复制，再到 &lt;code&gt;Github平台&lt;/code&gt; 添加上公钥后，就可以使用 SSH 方式推送代码到仓库了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/Km2z7BkxuwHYGrA.png&#34; alt=&#34;SSH-Rsa&#34;&gt;&lt;/p&gt;
+&lt;p&gt;登录&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29t&#34;&gt; Github 平台&lt;/span&gt;，点击右上角的个人头像，选择 &lt;code&gt;Settings&lt;/code&gt;  进入个人设置&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/VPWiBlAh1EdKcCt.png&#34; alt=&#34;GithubSettings&#34;&gt;&lt;/p&gt;
+&lt;p&gt;选择 &lt;code&gt;SSH and GPG keys&lt;/code&gt;  配置，&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/LjcU96PC8sZO1EJ.png&#34; alt=&#34;SSH&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击 &lt;code&gt;New SSH key&lt;/code&gt;  添加密钥，&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/wWaZLySrJTetYBQ.png&#34; alt=&#34;AddSSH-01&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/hXT4io39AvZ7bus.png&#34; alt=&#34;AddSSH-02&#34;&gt;&lt;/p&gt;
+&lt;p&gt;添加好密钥后，就可以尝试将本地的博客内容发布到这个仓库进行线上部署了。&lt;/p&gt;
+&lt;p&gt;在博客文件夹下点击鼠标右键并打开 &lt;code&gt;Git Bash Here&lt;/code&gt;  命令控制台。&lt;/p&gt;
+&lt;p&gt;首先输入以下命令安装 &lt;code&gt;hexo-deployer-git&lt;/code&gt;  插件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;之后重新解析生成博客静态资源，并使用 Hexo 的发布命令，将本地博客内容发布到远程仓库，Github Pages 服务会自动完成博客的线上部署。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo generate &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;最后在浏览器中打开 &lt;code&gt;username.github.io&lt;/code&gt;  即可查看线上博客，部署需要一定时间，如很长时间未加载出页面，可以在仓库的 &lt;code&gt;Actions&lt;/code&gt;  工作页面中查看是否部署成功。&lt;/p&gt;
+</content>
+        <category term="个人博客" scheme="https://yunian.top/categories/Hexo/" />
+        <category term="个人博客" scheme="https://yunian.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+        <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
         <updated>2024-10-12T17:15:40.166Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</id>
+        <id>https://yunian.top/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</id>
         <title>系统使用</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/"/>
+        <link rel="alternate" href="https://yunian.top/Tools/Windows/%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/"/>
         <content type="html">&lt;h1 id=&#34;系统使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统使用&#34;&gt;#&lt;/a&gt; 系统使用&lt;/h1&gt;
 &lt;h2 id=&#34;彻底删除启动项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#彻底删除启动项&#34;&gt;#&lt;/a&gt; 彻底删除启动项&lt;/h2&gt;
 &lt;p&gt;对电脑中开机自启动的程序进行管理，可以减少不必要的资源性能占用。在 &lt;code&gt;任务管理器&lt;/code&gt; 中，选择 &lt;code&gt;启动&lt;/code&gt; 一栏，可以看到自启动程序列表，每个程序的 &lt;code&gt;命令行&lt;/code&gt; 则可以看到其自启动文件的所在目录。&lt;/p&gt;
@@ -39,17 +78,16 @@
 &lt;/ol&gt;
 &lt;p&gt;Edge 浏览器插件文件夹的默认位置： &lt;code&gt;C:\Users\用户名\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\&lt;/code&gt; ，插件文件夹名称为乱码，可以根据文件夹的 &lt;code&gt;修改时间&lt;/code&gt; 和进入文件夹内显示的插件 &lt;code&gt;版本号&lt;/code&gt; 等信息确认具体为哪个插件。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="Windows" scheme="https://yunian.top/categories/MyBlog/Tools/Windows/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/Tools/" />
+        <category term="Windows" scheme="https://yunian.top/categories/Tools/Windows/" />
         <category term="软件使用" scheme="https://yunian.top/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" />
         <category term="Windows" scheme="https://yunian.top/tags/Windows/" />
         <updated>2024-07-09T10:27:53.937Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</id>
+        <id>https://yunian.top/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/</id>
         <title>VScode快捷任务配置</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/"/>
+        <link rel="alternate" href="https://yunian.top/Tools/VScode/VScode%E5%BF%AB%E6%8D%B7%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE/"/>
         <content type="html">&lt;h1 id=&#34;vscode快捷任务配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vscode快捷任务配置&#34;&gt;#&lt;/a&gt; VSCode 快捷任务配置&lt;/h1&gt;
 &lt;p&gt;在写个人博客时，会频繁在终端使用 &lt;code&gt;Hexo&lt;/code&gt;  命令和 &lt;code&gt;git&lt;/code&gt;  命令等，手动输入比较麻烦，因此，可以通过 VScode 配置 &lt;code&gt;task任务&lt;/code&gt; 的形式将常用的命令操作简化，这种方法还可以将博客源文件快捷推送到 &lt;code&gt;github&lt;/code&gt; 、 &lt;code&gt;gitee&lt;/code&gt;  等远程仓库上，实现手动备份，而无需复杂的 &lt;code&gt;workflow&lt;/code&gt;  自动化配置。&lt;/p&gt;
 &lt;p&gt;VScode 中 &lt;code&gt;task任务&lt;/code&gt; 有许多属性，可以自行百度了解，此处用到的主要属性及语义如下：&lt;/p&gt;
@@ -88,15 +126,14 @@
 &lt;p&gt;注意，要将内容添加在文件默认的 &lt;code&gt;[]&lt;/code&gt;  内，另外多个快捷键绑定内容间要以英文逗号间隔，最后一个快捷键绑定内容后面则无需逗号。&lt;/p&gt;
 &lt;p&gt;除了通过快捷键快速运行任务以外，还可以在 VScode 扩展商店中搜索 &lt;code&gt;tasks&lt;/code&gt;  安装扩展插件，该插件会将配置好的任务显示在 VScode 下方的状态栏中，点击即可一键使用。如果任务过多，可以查看点击安装的 task 扩展查看说明，隐藏一部分任务。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="VScode" scheme="https://yunian.top/categories/MyBlog/Tools/VScode/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/Tools/" />
+        <category term="VScode" scheme="https://yunian.top/categories/Tools/VScode/" />
         <updated>2024-07-09T10:27:53.935Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</id>
+        <id>https://yunian.top/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/</id>
         <title>Word文档-问题处理</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/"/>
+        <link rel="alternate" href="https://yunian.top/Tools/Office/Word%E6%96%87%E6%A1%A3-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86/"/>
         <content type="html">&lt;h1 id=&#34;word文档-问题处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-问题处理&#34;&gt;#&lt;/a&gt; Word 文档 - 问题处理&lt;/h1&gt;
 &lt;h2 id=&#34;删除空白页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除空白页&#34;&gt;#&lt;/a&gt; 删除空白页&lt;/h2&gt;
 &lt;p&gt;  出现空白页的原因有很多，有些是多余的 &lt;code&gt;【空行】&lt;/code&gt; 造成的， &lt;code&gt;【Backspace】&lt;/code&gt; 或 &lt;code&gt;【Delete】&lt;/code&gt; 键删除不必要的空行，再进行简单排版即可。也可以用 &lt;code&gt;【shift】&lt;/code&gt; + &lt;code&gt;【鼠标左键】&lt;/code&gt; 选中整页内容将其删除。这是最简单的情况。&lt;/p&gt;
@@ -122,33 +159,31 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
   通常将图片所占行的行距设置为单倍行距后即可正常缩放显示。&lt;br&gt;
   将图片的文字环绕方式修改为其他的类型，再通过文字的排版也可以让图片正常显示，但是该方法很可能会让文件由于文字显示区域大小的不同，导致在不同的显示器上，图片显示位置发生偏移或者遮盖住文字的情况。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/Tools/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/Tools/Office/" />
         <category term="Word" scheme="https://yunian.top/tags/Word/" />
         <category term="空白页" scheme="https://yunian.top/tags/%E7%A9%BA%E7%99%BD%E9%A1%B5/" />
         <updated>2024-07-09T10:27:53.933Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+        <id>https://yunian.top/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
         <title>Word文档-基础使用</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+        <link rel="alternate" href="https://yunian.top/Tools/Office/Word%E6%96%87%E6%A1%A3-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
         <content type="html">&lt;h1 id=&#34;word文档-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#word文档-基础使用&#34;&gt;#&lt;/a&gt; Word 文档 - 基础使用&lt;/h1&gt;
 &lt;h2 id=&#34;标题的目录大纲级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题的目录大纲级别&#34;&gt;#&lt;/a&gt; 标题的目录 (大纲) 级别&lt;/h2&gt;
 &lt;p&gt;  目录能够让文档的结构和主题一目了然，让阅读者更快了解文档的内容和找到所需内容的位置。Word 和 WPS 文字中都有自动生成目录的功能。但在生成目录之前，需要做的准备工作就是对文档中的多级标题设置其在目录 (大纲) 中的显示级别，这样自动生成的目录就会拥有分级效果。&lt;/p&gt;
 &lt;h2 id=&#34;定义常用字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义常用字体&#34;&gt;#&lt;/a&gt; 定义常用字体&lt;/h2&gt;
 &lt;p&gt;  在 Office Word 中，可以为常用字体指定快捷键，方便迅速切换字体。在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&gt;【更多】&lt;/code&gt; -&amp;gt; &lt;code&gt;【选项】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义功能区】&lt;/code&gt; -&amp;gt; &lt;code&gt;【自定义】&lt;/code&gt; 功能列表的最下方找到 &lt;code&gt;【宏-字体】&lt;/code&gt; 设置，之后在右侧选择想要设置快捷键的字体，为其指定新的快捷键即可，推荐使用 &lt;code&gt;【Alt+字母】&lt;/code&gt; 的形式，可以避免大多数的热键冲突。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/Tools/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/Tools/Office/" />
         <category term="Word" scheme="https://yunian.top/tags/Word/" />
         <updated>2024-07-09T10:27:53.932Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+        <id>https://yunian.top/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
         <title>Excel表格-基础使用</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+        <link rel="alternate" href="https://yunian.top/Tools/Office/Excel%E8%A1%A8%E6%A0%BC-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
         <content type="html">&lt;h1 id=&#34;excel表格-基础使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#excel表格-基础使用&#34;&gt;#&lt;/a&gt; Excel 表格 - 基础使用&lt;/h1&gt;
 &lt;h2 id=&#34;设置表格外部空白&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置表格外部空白&#34;&gt;#&lt;/a&gt; 设置表格外部空白&lt;/h2&gt;
 &lt;p&gt;有时候出于显示或者打印的要求，会将表格的外部区域设置为空白，即只保留表格的边界和内部框线，而表外不显示任何框线。&lt;/p&gt;
@@ -157,16 +192,15 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;p&gt;手动编写的序号在某些行删除或者新增后，无法自动更新序号，此时可以在序号列中使用 &lt;code&gt;RAW()&lt;/code&gt;  函数根据行号设置序号。&lt;/p&gt;
 &lt;p&gt;单元格中的 &lt;code&gt;RAW()&lt;/code&gt;  函数可以获取单元格所在行的行号，并且可以参与公式运算，所以通常将行号值减去表头所占行数即可得到一个递增的顺序序列，此方法生成的序号会随着单元格所在行号的变化而自动调整。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="软件使用" scheme="https://yunian.top/categories/MyBlog/Tools/" />
-        <category term="办公设计" scheme="https://yunian.top/categories/MyBlog/Tools/Office/" />
+        <category term="软件使用" scheme="https://yunian.top/categories/Tools/" />
+        <category term="办公设计" scheme="https://yunian.top/categories/Tools/Office/" />
         <category term="Excel" scheme="https://yunian.top/tags/Excel/" />
         <updated>2024-07-09T10:27:53.931Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Resources/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/</id>
+        <id>https://yunian.top/Resources/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/</id>
         <title>资源导航</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Resources/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
+        <link rel="alternate" href="https://yunian.top/Resources/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
         <content type="html">&lt;h1 id=&#34;系统工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#系统工具&#34;&gt;#&lt;/a&gt; 系统工具&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Windows10操作系统&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS96aC1jbi9zb2Z0d2FyZS1kb3dubG9hZC93aW5kb3dzMTA=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -272,8 +306,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;云盘搜索&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="资源聚合" scheme="https://yunian.top/categories/Resources/" />
         <category term="资源" scheme="https://yunian.top/tags/%E8%B5%84%E6%BA%90/" />
         <category term="系统工具" scheme="https://yunian.top/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/" />
         <category term="在线工具" scheme="https://yunian.top/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" />
@@ -282,9 +315,9 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
         <updated>2024-07-09T10:27:53.926Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Resources/%E7%B4%A0%E6%9D%90%E8%B5%84%E6%BA%90/</id>
+        <id>https://yunian.top/Resources/%E7%B4%A0%E6%9D%90%E8%B5%84%E6%BA%90/</id>
         <title>素材设计</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Resources/%E7%B4%A0%E6%9D%90%E8%B5%84%E6%BA%90/"/>
+        <link rel="alternate" href="https://yunian.top/Resources/%E7%B4%A0%E6%9D%90%E8%B5%84%E6%BA%90/"/>
         <content type="html">&lt;h1 id=&#34;图片素材&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片素材&#34;&gt;#&lt;/a&gt; 图片素材&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;4K高清壁纸&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9waWMubmV0Ymlhbi5jb20v&#34; data-background-image=&#34;https://s2.loli.net/2023/12/20/PITUx6jZ3uWglKO.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -344,8 +377,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;音效资源&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="资源聚合" scheme="https://yunian.top/categories/Resources/" />
         <category term="图片" scheme="https://yunian.top/tags/%E5%9B%BE%E7%89%87/" />
         <category term="图标" scheme="https://yunian.top/tags/%E5%9B%BE%E6%A0%87/" />
         <category term="字体" scheme="https://yunian.top/tags/%E5%AD%97%E4%BD%93/" />
@@ -355,9 +387,9 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
         <updated>2024-07-09T10:27:53.925Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Resources/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</id>
+        <id>https://yunian.top/Resources/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</id>
         <title>开发工具</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Resources/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+        <link rel="alternate" href="https://yunian.top/Resources/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
         <content type="html">&lt;h1 id=&#34;cc开发&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cc开发&#34;&gt;#&lt;/a&gt; C\C++ 开发&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;DevCpp&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvb3J3ZWxsZGV2Y3BwLw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -461,8 +493,7 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;虚拟容器&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="资源聚合" scheme="https://yunian.top/categories/Resources/" />
         <category term="开发工具" scheme="https://yunian.top/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" />
         <category term="C\C++" scheme="https://yunian.top/tags/C-C/" />
         <category term="Python" scheme="https://yunian.top/tags/Python/" />
@@ -475,9 +506,9 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
         <updated>2024-07-09T10:27:53.923Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Resources/%E5%AD%A6%E4%B9%A0%E6%95%99%E8%82%B2/</id>
+        <id>https://yunian.top/Resources/%E5%AD%A6%E4%B9%A0%E6%95%99%E8%82%B2/</id>
         <title>学习教育</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Resources/%E5%AD%A6%E4%B9%A0%E6%95%99%E8%82%B2/"/>
+        <link rel="alternate" href="https://yunian.top/Resources/%E5%AD%A6%E4%B9%A0%E6%95%99%E8%82%B2/"/>
         <content type="html">&lt;h1 id=&#34;公开课堂&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#公开课堂&#34;&gt;#&lt;/a&gt; 公开课堂&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;公开课&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmc=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -535,17 +566,16 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;文献翻译&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="资源聚合" scheme="https://yunian.top/categories/Resources/" />
         <category term="公开课" scheme="https://yunian.top/tags/%E5%85%AC%E5%BC%80%E8%AF%BE/" />
         <category term="图书" scheme="https://yunian.top/tags/%E5%9B%BE%E4%B9%A6/" />
         <category term="论文" scheme="https://yunian.top/tags/%E8%AE%BA%E6%96%87/" />
         <updated>2024-07-09T10:27:53.922Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Resources/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</id>
+        <id>https://yunian.top/Resources/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/</id>
         <title>博客相关</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Resources/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
+        <link rel="alternate" href="https://yunian.top/Resources/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
         <content type="html">&lt;h1 id=&#34;hexo官方&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo官方&#34;&gt;#&lt;/a&gt; Hexo 官方&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34; data-background-image=&#34;https://s2.loli.net/2024/03/29/GpXUMfi6Q9wh3eY.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -581,17 +611,16 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;图床&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="资源聚合" scheme="https://yunian.top/categories/MyBlog/Resources/" />
+        <category term="资源聚合" scheme="https://yunian.top/categories/Resources/" />
         <category term="Hexo官方" scheme="https://yunian.top/tags/Hexo%E5%AE%98%E6%96%B9/" />
         <category term="Hexo插件" scheme="https://yunian.top/tags/Hexo%E6%8F%92%E4%BB%B6/" />
         <category term="图床" scheme="https://yunian.top/tags/%E5%9B%BE%E5%BA%8A/" />
         <updated>2024-07-09T10:27:53.921Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+        <id>https://yunian.top/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
         <title>Linux-系统常用命令</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+        <link rel="alternate" href="https://yunian.top/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
         <content type="html">&lt;h2 id=&#34;文件管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件管理&#34;&gt;#&lt;/a&gt; 文件管理&lt;/h2&gt;
 &lt;p&gt;-- 删除路径下一定修改时间前的文件&lt;/p&gt;
 &lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;find&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;etl&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;job&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;logs &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;mtime &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;name &lt;span class=&#34;token string&#34;&gt;&#39;*.log&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;exec rm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;rf &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; \&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注:/&#39;*.log&#39; 为日志文件后缀；+10 表示修改时间为 10 天前；&lt;/p&gt;
@@ -602,41 +631,38 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br&gt;
  其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;/p&gt;
 &lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;添加定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;删除定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;r&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;显示定时计划列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;编辑定时计划内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="Linux" scheme="https://yunian.top/categories/MyBlog/Note/Linux/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="Linux" scheme="https://yunian.top/categories/Note/Linux/" />
         <updated>2024-07-09T10:27:53.915Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+        <id>https://yunian.top/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
         <title>Git-常用命令</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+        <link rel="alternate" href="https://yunian.top/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
         <content type="html">&lt;h1 id=&#34;删除对应名称的文件文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除对应名称的文件文件夹&#34;&gt;#&lt;/a&gt; 删除对应名称的文件 / 文件夹&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--cached&lt;/span&gt; 文件/文件夹名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;提交到git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交到git&#34;&gt;#&lt;/a&gt; 提交到 git&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;提交的操作描述&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 推送到远程仓库&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="Git" scheme="https://yunian.top/categories/MyBlog/Note/Git/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="Git" scheme="https://yunian.top/categories/Note/Git/" />
         <updated>2024-07-09T10:27:53.913Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/</id>
+        <id>https://yunian.top/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/</id>
         <title>帆软服务器运维</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/"/>
+        <link rel="alternate" href="https://yunian.top/Note/FineReport/FineReport-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/"/>
         <content type="html">&lt;h1 id=&#34;帆软服务器运维&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#帆软服务器运维&#34;&gt;#&lt;/a&gt; 帆软服务器运维&lt;/h1&gt;
 &lt;h2 id=&#34;重启帆软服务器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重启帆软服务器&#34;&gt;#&lt;/a&gt; 重启帆软服务器&lt;/h2&gt;
 &lt;p&gt;帆软因某些报表崩溃或者内存占用过高导致服务器宕机时，使用 shell 工具连接帆软服务器进入指定目录，重启帆软内置的 tomcat 服务器：&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 进入指定目录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; /apps/tomcat-linux/bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 运行 tomcat 服务器启动脚本&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./startup.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="FineReport" scheme="https://yunian.top/categories/MyBlog/Note/FineReport/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="FineReport" scheme="https://yunian.top/categories/Note/FineReport/" />
         <updated>2024-07-09T10:27:53.911Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/</id>
+        <id>https://yunian.top/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/</id>
         <title>FineReport-常用样式</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/"/>
+        <link rel="alternate" href="https://yunian.top/Note/FineReport/FineReport-%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F/"/>
         <content type="html">&lt;h1 id=&#34;finereport-常用样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#finereport-常用样式&#34;&gt;#&lt;/a&gt; FineReport - 常用样式&lt;/h1&gt;
 &lt;h2 id=&#34;控件显示值拼接数据集多个字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#控件显示值拼接数据集多个字段&#34;&gt;#&lt;/a&gt; 控件显示值拼接数据集多个字段&lt;/h2&gt;
 &lt;p&gt;在帆软报表中，控件的显示值往往需要拼接数据库中某业务值的代码及其中文描述等，因此可以使用 &lt;code&gt;VALUE&lt;/code&gt;  函数，将数据集中的代码和中文描述两个字段拼接作为控件的显示值，显示值设置公式如下：&lt;/p&gt;
@@ -646,15 +672,14 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
 &lt;p&gt;以下业务场景是在成本报表中，根据两种时间维度的数据类型来控制日期控件格式，其中 &lt;code&gt;AC&lt;/code&gt;  和 &lt;code&gt;AX&lt;/code&gt;  类型为月成本数据，则日期控件格式为 &lt;code&gt;年月&lt;/code&gt; ，而 &lt;code&gt;AD&lt;/code&gt;  和 &lt;code&gt;AE&lt;/code&gt;  类型则为日成本数据，日期控件格式为 &lt;code&gt;年月日&lt;/code&gt; ，并调整报表中相关单元格获取对应日期控件的值。&lt;/p&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#x2F;&amp;#x2F; 在前置条件的控件中添加 JS 事件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var form &amp;#x3D; this.options.form;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p1Widget &amp;#x3D; form.getWidgetByName (&amp;quot;会计区间月&amp;quot;); &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p2Widget &amp;#x3D; form.getWidgetByName (&amp;quot;Label 会计区间月&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p3Widget &amp;#x3D; form.getWidgetByName (&amp;quot;会计区间日&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var p4Widget &amp;#x3D; form.getWidgetByName (&amp;quot;Label 会计区间日&amp;quot;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var value &amp;#x3D; this.getValue (); &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;if (value &amp;#x3D;&amp;#x3D; &amp;quot;AC&amp;quot; || value &amp;#x3D;&amp;#x3D; &amp;quot;AX&amp;quot;) &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125; else if (value &amp;#x3D;&amp;#x3D; &amp;quot;AD&amp;quot; || value &amp;#x3D;&amp;#x3D; &amp;quot;AE&amp;quot; ) &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (true);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125; else &amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p1Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p2Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p3Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	p4Widget.setVisible (false);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;报表单元格中的日期表头显示调整：&lt;/p&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#x2F;&amp;#x2F; 报表表头中的日期显示&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#39; 公司产品成本表（&amp;#39; + IF (OR ($ 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AC&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AX&amp;quot;), $ 会计区间月，IF (OR ($ 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AD&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AE&amp;quot;), $ 会计区间日，&amp;quot;&amp;quot;)) + &amp;#39;)&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#x2F;&amp;#x2F; 日期表头&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;IF (OR ($ 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AC&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AX&amp;quot;), &amp;quot;本月&amp;quot;, IF (OR ($ 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AD&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D; &amp;quot;AE&amp;quot;), &amp;quot;本日&amp;quot;,&amp;quot;&amp;quot;))&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#x2F;&amp;#x2F; 日期字段值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$&amp;#123;if (OR (数据类型 &amp;#x3D;&amp;#x3D;&amp;quot;AC&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D;&amp;quot;AX&amp;quot;),&amp;quot;AND ACCOUNT_PERIOD &amp;#x3D; &amp;#39;&amp;quot; + 会计区间月 + &amp;quot;&amp;#39;&amp;quot;,&amp;quot;&amp;quot;)&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$&amp;#123;if (OR (数据类型 &amp;#x3D;&amp;#x3D;&amp;quot;AD&amp;quot;, 数据类型 &amp;#x3D;&amp;#x3D;&amp;quot;AE&amp;quot;),&amp;quot;AND ACCOUNT_PERIOD &amp;#x3D; &amp;#39;&amp;quot; + 会计区间日 + &amp;quot;&amp;#39;&amp;quot;,&amp;quot;&amp;quot;)&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="FineReport" scheme="https://yunian.top/categories/MyBlog/Note/FineReport/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="FineReport" scheme="https://yunian.top/categories/Note/FineReport/" />
         <updated>2024-07-09T10:27:53.910Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
+        <id>https://yunian.top/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
         <title>数据库管理-SQL基础语法</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+        <link rel="alternate" href="https://yunian.top/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
         <content type="html">&lt;h1 id=&#34;数据库管理-sql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库管理-sql基础语法&#34;&gt;#&lt;/a&gt; 数据库管理 - SQL 基础语法&lt;/h1&gt;
 &lt;h2 id=&#34;创建数据表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据表&#34;&gt;#&lt;/a&gt; 创建数据表&lt;/h2&gt;
 &lt;p&gt;数据表是数据存储的基本结构之一，支持查询、修改、删除和新增等多种数据操作，也能与其他的数据表建立关联，实现多表操作。&lt;/p&gt;
@@ -683,23 +708,21 @@ FROM TableA
 &lt;p&gt;SELECT INTO 可以从已有的表中查询出数据放入新表中，往往用于表的信息复制。不过有些数据库如 DB2、MySQL 等不支持 SELECT INTO 语句，因此，使用时需要注意数据库是否支持该语句。&lt;br&gt;
 INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 SELECT INTO 语句要求查询表存在，而目标表不能存在，目标表会在数据插入时创建。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="数据库" scheme="https://yunian.top/categories/MyBlog/Note/Database/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="数据库" scheme="https://yunian.top/categories/Note/Database/" />
         <category term="数据库" scheme="https://yunian.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
         <category term="技术笔记" scheme="https://yunian.top/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" />
         <category term="SQL" scheme="https://yunian.top/tags/SQL/" />
         <updated>2024-07-09T10:27:53.908Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+        <id>https://yunian.top/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
         <title>C++笔记-环境搭建</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+        <link rel="alternate" href="https://yunian.top/Note/C++/C++%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
         <content type="html">&lt;h1 id=&#34;c笔记-环境搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c笔记-环境搭建&#34;&gt;#&lt;/a&gt; C++ 笔记 - 环境搭建&lt;/h1&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="技术笔记" scheme="https://yunian.top/categories/MyBlog/Note/" />
-        <category term="C++" scheme="https://yunian.top/categories/MyBlog/Note/C/" />
+        <category term="技术笔记" scheme="https://yunian.top/categories/Note/" />
+        <category term="C++" scheme="https://yunian.top/categories/Note/C/" />
         <category term="C++" scheme="https://yunian.top/tags/C/" />
         <category term="环境搭建" scheme="https://yunian.top/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" />
         <category term="Codeblocks" scheme="https://yunian.top/tags/Codeblocks/" />
@@ -708,12 +731,12 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
         <updated>2024-07-09T10:27:53.900Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Hexo/Shoka%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</id>
-        <title>Shoka主题配置</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Hexo/Shoka%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+        <id>https://yunian.top/Hexo/4%E3%80%81Shoka%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</id>
+        <title>4、Shoka主题配置</title>
+        <link rel="alternate" href="https://yunian.top/Hexo/4%E3%80%81Shoka%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
         <content type="html">&lt;h1 id=&#34;shoka主题简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shoka主题简介&#34;&gt;#&lt;/a&gt; Shoka 主题简介&lt;/h1&gt;
 &lt;p&gt;这个博客使用了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUv&#34;&gt; Shoka 主题&lt;/span&gt;，主题的作者参考了笔记软件 &lt;code&gt;Bear&lt;/code&gt;  和 &lt;code&gt;Next&lt;/code&gt;  主题设计了这款二次元风格的主题。Shoka 主题有丰富的标签和功能，支持分类精选、文章配图和多媒体播放等，网页的样式和排版都很优秀，一些扩展功能比如卡片标签等相较于默认的语言引擎也能实现更多的样式需求。&lt;/p&gt;
-&lt;h1 id=&#34;主题安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题安装&#34;&gt;#&lt;/a&gt; 主题安装&lt;/h1&gt;
+&lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
 &lt;p&gt;按照&lt;a href&gt; Hexo 博客框架搭建&lt;/a&gt;配置好博客基础环境后，使用 git 命令即可安装 Shoka 主题。&lt;/p&gt;
 &lt;p&gt;首先打开 &lt;code&gt;命令提示符&lt;/code&gt; 或者 &lt;code&gt;Git Bash&lt;/code&gt;  窗口，使用 &lt;code&gt;cd&lt;/code&gt;  命令切换到博客根目录下：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//将盘符及路径修改为博客根目录对应的即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;D:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; D://MyBlog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;输入克隆命令安装 Shoka 主题：&lt;/p&gt;
@@ -873,7 +896,7 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 &lt;p&gt;自定义语言包用于替换 &lt;code&gt;menu菜单按钮&lt;/code&gt; 或者默认区域的文字显示，默认语言包在 &lt;code&gt;博客根目录\themes\shoka\languages\&lt;/code&gt;  下。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;四-特殊语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-特殊语法&#34;&gt;#&lt;/a&gt; 四、特殊语法&lt;/h1&gt;
+&lt;h1 id=&#34;特殊语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊语法&#34;&gt;#&lt;/a&gt; 特殊语法&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;链接块。将链接字段信息写在 &lt;code&gt;links&lt;/code&gt;  标签块内，可以将链接转换成标签卡片的形式显示，便于排列和美观。可配置链接字段信息见下表：&lt;/p&gt;
@@ -1149,17 +1172,16 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_5&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_5&#34;&gt; 默认颜色&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="个人博客" scheme="https://yunian.top/categories/MyBlog/Hexo/" />
+        <category term="个人博客" scheme="https://yunian.top/categories/Hexo/" />
         <category term="个人博客" scheme="https://yunian.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
         <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
         <category term="Shoka" scheme="https://yunian.top/tags/Shoka/" />
         <updated>2024-07-09T10:27:53.893Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Hexo/Markdown%E8%AF%AD%E6%B3%95/</id>
-        <title>Markdown语法</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Hexo/Markdown%E8%AF%AD%E6%B3%95/"/>
+        <id>https://yunian.top/Hexo/2%E3%80%81Markdown%E8%AF%AD%E6%B3%95/</id>
+        <title>2、Markdown语法</title>
+        <link rel="alternate" href="https://yunian.top/Hexo/2%E3%80%81Markdown%E8%AF%AD%E6%B3%95/"/>
         <content type="html">&lt;h1 id=&#34;markdown语言简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown语言简介&#34;&gt;#&lt;/a&gt; Markdown 语言简介&lt;/h1&gt;
 &lt;p&gt;Markdown 是一种轻量级的标记型语言。Markdown 语言可以结合简化的文本标记，进行纯文本格式的文档编写。发布时 Markdown 语言引擎会根据标记将文本解析成网页元素并进行排版美化等，大大简化了文本创作外的工作量，让作者更专注于内容。以下介绍一些 Markdown 中常用的文本标记的语法和注意事项。&lt;/p&gt;
 &lt;h1 id=&#34;标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h1&gt;
@@ -1273,20 +1295,19 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 &lt;/table&gt;
 &lt;p&gt;注意字符实体的分号 &lt;code&gt;;&lt;/code&gt;  为半角，不可省略。&lt;/p&gt;
 </content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="个人博客" scheme="https://yunian.top/categories/MyBlog/Hexo/" />
+        <category term="个人博客" scheme="https://yunian.top/categories/Hexo/" />
         <category term="个人博客" scheme="https://yunian.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
         <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
         <category term="Markdown" scheme="https://yunian.top/tags/Markdown/" />
         <updated>2024-07-09T10:27:53.892Z</updated>
     </entry>
     <entry>
-        <id>https://yunian.top/MyBlog/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
-        <title>Hexo博客搭建</title>
-        <link rel="alternate" href="https://yunian.top/MyBlog/Hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-        <content type="html">&lt;h1 id=&#34;一-前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-前言&#34;&gt;#&lt;/a&gt; 一、前言&lt;/h1&gt;
+        <id>https://yunian.top/Hexo/1%E3%80%81Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</id>
+        <title>1、Hexo博客框架</title>
+        <link rel="alternate" href="https://yunian.top/Hexo/1%E3%80%81Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"/>
+        <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vemgtY24v&#34;&gt;Hexo 框架&lt;/span&gt;是基于 &lt;code&gt;NodeJS&lt;/code&gt;  构建的博客框架，可以快速高效地解析 &lt;code&gt;Markdown&lt;/code&gt;  语言编写的文本文件，生成博客网站的各种静态网页内容，还能通过主题和功能插件等实现定制化的样式和功能。&lt;/p&gt;
-&lt;h1 id=&#34;二-环境准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-环境准备&#34;&gt;#&lt;/a&gt; 二、环境准备&lt;/h1&gt;
+&lt;h1 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h1&gt;
 &lt;p&gt;搭建 Hexo 博客框架需要先安装 NodeJS 和 git 工具。&lt;/p&gt;
 &lt;p&gt;NodeJS 是 Hexo 框架解析文件的必需环境，安装后可以使用 npm 命令安装所需的功能插件；git 工具则是用来下载主题、线上部署等。&lt;/p&gt;
 &lt;p&gt;Node.js 官网下载：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=&#34;&gt;http://nodejs.cn/download/&lt;/span&gt;&lt;/p&gt;
@@ -1294,7 +1315,7 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 &lt;p&gt;打开 &lt;code&gt;命令提示符&lt;/code&gt; ，分别输入以下命令，确认工具是否正常安装：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;node&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2023/12/29/KYoRlcJNWhnVZuD.png&#34; alt=&#34;工具安装验证&#34;&gt;&lt;/p&gt;
 &lt;p&gt;由于 npm 默认安装源为国外服务器，可能出现连接失败或者下载缓慢等问题，执行以下命令可以修改默认源为淘宝镜像源：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; config &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; registry https://registry.npm.taobao.org&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;三-安装hexo框架&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-安装hexo框架&#34;&gt;#&lt;/a&gt; 三、安装 Hexo 框架&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; config &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; registry https://registry.npm.taobao.org&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;安装hexo框架&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装hexo框架&#34;&gt;#&lt;/a&gt; 安装 Hexo 框架&lt;/h1&gt;
 &lt;p&gt;选择或创建一个空文件夹作为博客根目录，例如 &lt;code&gt;blog&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;在 &lt;code&gt;blog&lt;/code&gt;  目录下单击鼠标右键，点击 &lt;code&gt;Git Bash Here&lt;/code&gt;  打开 git 工具的命令行控制台，依次输入以下命令：&lt;/p&gt;
 &lt;ol&gt;
@@ -1322,44 +1343,8 @@ INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 S
 &lt;p&gt;控制台中使用&lt;span class=&#34;kbd&#34;&gt; Ctrl&lt;/span&gt; + &lt;span class=&#34;kbd&#34;&gt;C&lt;/span&gt; 快捷键可以关停本地服务器。&lt;/p&gt;
 &lt;p&gt;至此，一个初始的 Hexo 博客站点已经搭建完成，此时， &lt;code&gt;blog&lt;/code&gt;  博客根目录下主要有以下内容：&lt;/p&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node_modules: Hexo 的依赖包和插件等&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;scaffolds：存放布局模板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;source：存放博客源文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;themes：存放个性化主题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_config.yml: 全局配置文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;之后便可以在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt; Hexo 主题仓库&lt;/span&gt;中下载喜欢的主题，不过站点的定制化效果往往还需要根据主题作者的说明进行相关配置。&lt;/p&gt;
-&lt;h1 id=&#34;四-线上部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四-线上部署&#34;&gt;#&lt;/a&gt; 四、线上部署&lt;/h1&gt;
-&lt;p&gt;本地部署的博客站点只能在一台设备上浏览，要随时随地查看或者分享给其他人还需要将博客发布到线上。&lt;/p&gt;
-&lt;p&gt;线上部署博客可以通过架设自己的云服务器或者借助 Github、Gitee 平台等。因为云服务器的设备、带宽及流量等都是收费的，而 Gitee 虽然适合国内访问，但是更新内容时仍然需要手动部署，服务也时常关闭，所以体验并不好。&lt;/p&gt;
-&lt;p&gt;而 Github 平台的 Pages 服务可以免费托管 Hexo 框架搭建的个人网站，并且支持配置个人域名访问，所以很适合个人的博客分享。&lt;/p&gt;
-&lt;h2 id=&#34;注册账号及创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注册账号及创建仓库&#34;&gt;#&lt;/a&gt; 注册账号及创建仓库&lt;/h2&gt;
-&lt;p&gt;首先在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tLw==&#34;&gt; Github 平台&lt;/span&gt;使用邮箱注册一个账号，之后根据下面的步骤创建用于博客部署的仓库。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/08/MOSNFKTgJwIWf7r.png&#34; alt=&#34;NewRepo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/09/rNnyaYj36BFHWwO.png&#34; alt=&#34;RepoInfo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;创建好仓库以后，打开仓库，复制 SSH 方式的仓库地址。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/09/QxEGrW78L5Y9zIm.png&#34; alt=&#34;CopyRepoSSH&#34;&gt;&lt;/p&gt;
-&lt;p&gt;打开博客文件夹，编辑站点全局配置文件 &lt;code&gt;config.yml&lt;/code&gt;  中的 &lt;code&gt;deploy&lt;/code&gt;  配置项如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;git&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git@github.com&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;yunian13247/yunian13247.github.io.git&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将上面的 &lt;code&gt;github&lt;/code&gt;  的仓库地址替换为前面复制的 SSH 方式的仓库地址即可绑定远程仓库。&lt;/p&gt;
-&lt;p&gt;使用 SSH 方式的好处是推送到远程仓库时无需账号登录，代码托管平台会验证本机所对应的公钥和私钥来识别推送方，所以现在先生成一下公钥和私钥。&lt;/p&gt;
-&lt;p&gt;打开路径为 &lt;code&gt;C:\Users\用户名\.ssh&lt;/code&gt;  的目录，如没有这个文件夹可以新建一个。&lt;/p&gt;
-&lt;p&gt;在 &lt;code&gt;.ssh&lt;/code&gt;  目录下打开 Bash 控制台，输入以下命令（将示例邮箱替换为 github 登录用的邮箱）生成密钥：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ssh-keygen &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; rsa &lt;span class=&#34;token parameter variable&#34;&gt;-C&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;example@163.com&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/shWoTDuyBAU1rbZ.png&#34; alt=&#34;SSH-Key&#34;&gt;&lt;/p&gt;
-&lt;p&gt;保存密钥的文件名称默认为 &lt;code&gt;id_rsa&lt;/code&gt; ，如果只配置单个 SSH 密钥，可以直接回车确认，使用默认文件名生成密钥。若有多个密钥的需求，文件名必须修改，要不然每次默认文件名生成的密钥仅会覆盖旧密钥。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/Rz73xMgarjsZykv.png&#34; alt=&#34;SSH-RsaName&#34;&gt;&lt;/p&gt;
-&lt;p&gt;之后是输入 SSH 密码以及确认密码，建议不设置，否则推送时可能还要输入密码，失去了 SSH 免登录的便捷。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/qD94SMkGiBlWcVp.png&#34; alt=&#34;SSH-RsaPassword&#34;&gt;&lt;/p&gt;
-&lt;p&gt;到下面这个页面就是密钥成功生成了，可以打开 &lt;code&gt;C:\Users\用户名\.ssh&lt;/code&gt;  目录查看，打开对应的文件名后缀为 &lt;code&gt;.pub&lt;/code&gt;  的公钥文件，使用&lt;span class=&#34;kbd&#34;&gt; Ctrl&lt;/span&gt;+&lt;span class=&#34;kbd&#34;&gt;A&lt;/span&gt; 快捷键选中全部内容进行复制，再到 &lt;code&gt;Github平台&lt;/code&gt; 添加上公钥后，就可以使用 SSH 方式推送代码到仓库了。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/Km2z7BkxuwHYGrA.png&#34; alt=&#34;SSH-Rsa&#34;&gt;&lt;/p&gt;
-&lt;p&gt;登录&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29t&#34;&gt; Github 平台&lt;/span&gt;，点击右上角的个人头像，选择 &lt;code&gt;Settings&lt;/code&gt;  进入个人设置&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/VPWiBlAh1EdKcCt.png&#34; alt=&#34;GithubSettings&#34;&gt;&lt;/p&gt;
-&lt;p&gt;选择 &lt;code&gt;SSH and GPG keys&lt;/code&gt;  配置，&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/LjcU96PC8sZO1EJ.png&#34; alt=&#34;SSH&#34;&gt;&lt;/p&gt;
-&lt;p&gt;点击 &lt;code&gt;New SSH key&lt;/code&gt;  添加密钥，&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/wWaZLySrJTetYBQ.png&#34; alt=&#34;AddSSH-01&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/11/12/hXT4io39AvZ7bus.png&#34; alt=&#34;AddSSH-02&#34;&gt;&lt;/p&gt;
-&lt;p&gt;添加好密钥后，就可以尝试将本地的博客内容发布到这个仓库进行线上部署了。&lt;/p&gt;
-&lt;p&gt;在博客文件夹下点击鼠标右键并打开 &lt;code&gt;Git Bash Here&lt;/code&gt;  命令控制台。&lt;/p&gt;
-&lt;p&gt;首先输入以下命令安装 &lt;code&gt;hexo-deployer-git&lt;/code&gt;  插件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm install hexo-deployer-git --save
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;重新解析生成博客静态资源，之后使用 Hexo 的发布命令&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo generate &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="余年" scheme="https://yunian.top/categories/MyBlog/" />
-        <category term="个人博客" scheme="https://yunian.top/categories/MyBlog/Hexo/" />
+</content>
+        <category term="个人博客" scheme="https://yunian.top/categories/Hexo/" />
         <category term="个人博客" scheme="https://yunian.top/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
         <category term="Hexo" scheme="https://yunian.top/tags/Hexo/" />
         <updated>2024-07-09T10:27:53.891Z</updated>
