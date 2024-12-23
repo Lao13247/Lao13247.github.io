@@ -1050,6 +1050,10 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXR6bi5jbi9kb3duL3BhZ2UucGhw&#34;&gt;远程开机卡&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;系统工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Alist&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9hbGlzdC5ubi5jaS9ndWlkZS9pbnN0YWxsL2Rlc2t0b3AuaHRtbA==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9hbGlzdC5ubi5jaS9ndWlkZS9pbnN0YWxsL2Rlc2t0b3AuaHRtbA==&#34;&gt;Alist&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;系统工具&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
         <category term="网站导航" scheme="https://yunian.site/categories/Resources/" />
@@ -1154,6 +1158,12 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvcGVudGFoby8=&#34;&gt;Kettle&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;数据同步&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ide编辑器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ide编辑器&#34;&gt;#&lt;/a&gt; IDE 编辑器&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;VSCode&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vRG93bmxvYWQ=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/22/1J6hG3vq7f2k8Lp.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vRG93bmxvYWQ=&#34;&gt;VSCode&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;代码编辑器&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;版本管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#版本管理&#34;&gt;#&lt;/a&gt; 版本管理&lt;/h1&gt;
 &lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;git&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/22/XCqs5hivZezRbaE.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -1169,6 +1179,32 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly94c2hlbGwuZW4uc29mdG9uaWMuY29tLz8=&#34;&gt;Xshell&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;服务器运维&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;前端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前端&#34;&gt;#&lt;/a&gt; 前端&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;NodeJS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMuY24vZG93bmxvYWQv&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMuY24vZG93bmxvYWQv&#34;&gt;NodeJS&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;JavaScript&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;api工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#api工具&#34;&gt;#&lt;/a&gt; API 工具&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Apipost&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly92Ny5hcGlwb3N0LmNuL2FwaXM/dXRtX3NvdXJjZT0xMDEyMCMvYXBpcy9ydW4=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly92Ny5hcGlwb3N0LmNuL2FwaXM/dXRtX3NvdXJjZT0xMDEyMCMvYXBpcy9ydW4=&#34;&gt;Apipost-在线端口测试&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;百度&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9haW0uYmFpZHUuY29tL3Byb2R1Y3Qvc2VhcmNoP3Byb2R1Y3RDYXRlZ29yeT02MDEwMCZwcm9kdWN0SW5kdXN0cnk9MzAwMTM=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9haW0uYmFpZHUuY29tL3Byb2R1Y3Qvc2VhcmNoP3Byb2R1Y3RDYXRlZ29yeT02MDEwMCZwcm9kdWN0SW5kdXN0cnk9MzAwMTM=&#34;&gt;百度API市场&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;开源中国&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==&#34;&gt;代码工具-开源中国&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;虚拟容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟容器&#34;&gt;#&lt;/a&gt; 虚拟容器&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Docker&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34;&gt;Docker&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;虚拟容器&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
         <category term="网站导航" scheme="https://yunian.site/categories/Resources/" />
@@ -1275,45 +1311,6 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
         <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
         <category term="Git" scheme="https://yunian.site/categories/Note/Git/" />
         <updated>2024-07-09T10:27:53.913Z</updated>
-    </entry>
-    <entry>
-        <id>https://yunian.site/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
-        <title>数据库管理-SQL基础语法</title>
-        <link rel="alternate" href="https://yunian.site/Note/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86-SQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-        <content type="html">&lt;h1 id=&#34;数据库管理-sql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库管理-sql基础语法&#34;&gt;#&lt;/a&gt; 数据库管理 - SQL 基础语法&lt;/h1&gt;
-&lt;h2 id=&#34;创建数据表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据表&#34;&gt;#&lt;/a&gt; 创建数据表&lt;/h2&gt;
-&lt;p&gt;数据表是数据存储的基本结构之一，支持查询、修改、删除和新增等多种数据操作，也能与其他的数据表建立关联，实现多表操作。&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;-- 创建表 (基础)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; tableName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    column1 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn2 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cloumn3 datatype &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;constraint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数据插入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据插入&#34;&gt;#&lt;/a&gt; 数据插入&lt;/h2&gt;
-&lt;h3 id=&#34;1-insert-into&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-insert-into&#34;&gt;#&lt;/a&gt; 1. INSERT INTO&lt;/h3&gt;
-&lt;p&gt;在 DB2 等数据库中，向表中插入新数据常用的是 SQL 基础语法中的 INSERT INTO 语句。&lt;br&gt;
-INSERT INTO 语句要求要插入数据的表 (tableName) 必须是存在的。该语句可以实现一行记录的导入或多行记录的批量导入，还可以指定更新的数据列等。指定列名时，可以只插入列出字段的数据，不指定列名和列序时，需要按照表结构设计的字段顺序和列数在 VALUES 排列好所有要插入的数据值。另外，还可以和 SELECT 查询语句关联，可将查询表中查询出的数据按照格式插入到目标表中。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;-- 一行记录导入
-INSERT INTO tableName (field1,field2,field3,...)
-VALUES (value1,value2,value3,...);
-
--- 多行记录导入
-INSERT INTO tableName (field1,field2,field3,...)
-VALUES
-(value11,value12,value13),
-(value21,value22,value23),
-...
-
--- 查询导入
-INSERT INTO tableName (field1,field2,field3,...)
-SELECT Afield1,Afield2,Afield3,...
-FROM TableA
-[WHERE Afield1 = &amp;quot;&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;2select-into&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2select-into&#34;&gt;#&lt;/a&gt; 2.SELECT INTO&lt;/h3&gt;
-&lt;p&gt;SELECT INTO 可以从已有的表中查询出数据放入新表中，往往用于表的信息复制。不过有些数据库如 DB2、MySQL 等不支持 SELECT INTO 语句，因此，使用时需要注意数据库是否支持该语句。&lt;br&gt;
-INSERT INTO 语句要求查询表和目标表都必须是已经存在的，而 SELECT INTO 语句要求查询表存在，而目标表不能存在，目标表会在数据插入时创建。&lt;/p&gt;
-</content>
-        <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
-        <category term="数据库" scheme="https://yunian.site/categories/Note/Database/" />
-        <category term="数据库" scheme="https://yunian.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
-        <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
-        <category term="SQL" scheme="https://yunian.site/tags/SQL/" />
-        <updated>2024-07-09T10:27:53.908Z</updated>
     </entry>
     <entry>
         <id>https://yunian.site/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
