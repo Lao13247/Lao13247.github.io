@@ -10,8 +10,110 @@
         </author>
         <description>学习笔记和随笔记录</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
-        <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0800</lastBuildDate>
+        <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Mysql命令速查</title>
+            <link>https://yunian.site/Note/Database/Mysql%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
+            <category term="数据库" scheme="https://yunian.site/categories/Note/Database/" />
+            <category term="数据库" scheme="https://yunian.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+            <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
+            <category term="Mysql" scheme="https://yunian.site/tags/Mysql/" />
+            <pubDate>Thu, 02 Jan 2025 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;服务启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务启动&#34;&gt;#&lt;/a&gt; 服务启动&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;net start mysql&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;服务停止&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务停止&#34;&gt;#&lt;/a&gt; 服务停止&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;net stop mysql&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;用户登录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户登录&#34;&gt;#&lt;/a&gt; 用户登录&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; root &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;用户退出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户退出&#34;&gt;#&lt;/a&gt; 用户退出&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;exit&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;重置密码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重置密码&#34;&gt;#&lt;/a&gt; 重置密码&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 登录 mysql&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; root &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 执行以下命令&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;use mysql&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;update user &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;authentication_string&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;password&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;123456&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; where &lt;span class=&#34;token assign-left variable&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;root&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;flush privileges&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;exit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 重启 mysql 服务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;net stop mysql&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;net start mysql&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;查看数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看数据库&#34;&gt;#&lt;/a&gt; 查看数据库&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;show databases&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</guid>
+            <title>数据库语句速查</title>
+            <link>https://yunian.site/Note/Database/SQL%E8%AF%AD%E5%8F%A5%E9%80%9F%E6%9F%A5/</link>
+            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
+            <category term="数据库" scheme="https://yunian.site/categories/Note/Database/" />
+            <category term="数据库" scheme="https://yunian.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+            <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
+            <category term="SQL" scheme="https://yunian.site/tags/SQL/" />
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;信息查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息查询&#34;&gt;#&lt;/a&gt; 信息查询&lt;/h1&gt;
+&lt;h2 id=&#34;数据库版本查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库版本查询&#34;&gt;#&lt;/a&gt; 数据库版本查询&lt;/h2&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;span&gt;系统信息查询&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; SUB_ENERGY&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ODS_MEDIACORRESPONDENCE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;存储过程列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程列表&#34;&gt;#&lt;/a&gt; 存储过程列表&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT PROCSCHEMA, PROCNAME FROM SYSCAT.PROCEDURES
+WHERE PROCSCHEMA IN (&#39;SCHEMA_NAME1&#39;,&#39;SCHEMA_NAME2&#39; )
+ORDER BY PROCSCHEMA
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;表空间大小容量查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表空间大小容量查询&#34;&gt;#&lt;/a&gt; 表空间大小容量查询&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT substr (tbsp_name, 1, 20) AS TABLESPACE_NAME,
+	substr (tbsp_content_type, 1, 10) AS TABLESPACE_TYPE,
+	sum(tbsp_total_size_kb) / 1024 AS TOTAL_MB,
+	sum(tbsp_used_size_kb) / 1024 AS USED_MB,
+	sum(tbsp_free_size_kb) / 1024 AS FREE_MB,
+	tbsp_page_size AS PAGE_SIZE
+FROM SYSIBMADM.TBSP_UTILIZATION
+GROUP BY tbsp_name, tbsp_content_type, tbsp_page_size
+ORDER BY 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;数据结构修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构修改&#34;&gt;#&lt;/a&gt; 数据结构修改&lt;/h1&gt;
+&lt;h2 id=&#34;修改数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据类型&#34;&gt;#&lt;/a&gt; 修改数据类型&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;19&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数据分区重组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据分区重组&#34;&gt;#&lt;/a&gt; 数据分区重组&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;CALL sysproc.admin_cmd&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;reorg table SchemaName.TableName&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;修改数据库约束&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改数据库约束&#34;&gt;#&lt;/a&gt; 修改数据库约束&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ALTER TABLE schema_name.table_name ALTER MODULE_TYPE SET NOT NULL&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;REORG TABLE schema_name.table_name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ALTER TABLE schema_name.table_name DROP PRIMARY KEY&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ALTER TABLE schema_name.table_name ADD PRIMARY KEY&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;SRC_SYSTEM_ID, DES_SYSTEM_ID, SRC_OBJECT_NAME, DES_OBJECT_NAME, MODULE_TYPE&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;字段类型-长度-精度修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字段类型-长度-精度修改&#34;&gt;#&lt;/a&gt; 字段类型、长度、精度修改&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ALTER TABLE schema_name.table_name ALTER column_name SET DATA TYPE DECIMAL&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;19&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表解锁语句长度-精度修改易导致锁表需要重新组织数据&#34;&gt;#&lt;/a&gt; 表解锁语句（长度、精度修改易导致锁表，需要重新组织数据）&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;CALL sysproc.admin_cmd&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;REORG TABLE schema_name.table_name&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;日期运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期运算&#34;&gt;#&lt;/a&gt; 日期运算&lt;/h1&gt;
+&lt;h2 id=&#34;日期间隔天数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日期间隔天数&#34;&gt;#&lt;/a&gt; 日期间隔天数&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;SELECT DAYS(TO_DATE(&#39;20221028&#39;,&#39;YYYYMMDD&#39;)) - DAYS(TO_DATE(&#39;20220929&#39;,&#39;YYYYMMDD&#39;)) AS D_TIME 
+FROM SYSIBM.DUAL;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;unix时间戳转换数据库时间戳&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#unix时间戳转换数据库时间戳&#34;&gt;#&lt;/a&gt; UNIX 时间戳转换数据库时间戳&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;TIMESTAMP&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;1970-01-01 00:00:00.000&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; + &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1680150600036&lt;/span&gt; / &lt;span class=&#34;token number&#34;&gt;1000.0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token environment constant&#34;&gt;SECONDS&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;查询上个月日期字段精度为年月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查询上个月日期字段精度为年月&#34;&gt;#&lt;/a&gt; 查询上个月 (日期字段精度为年月)&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;SELECT YEARMONTH_COLUMN FROM TABLENAME&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;WHERE  TABLENAME.YEARMONTH_COLUMN &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	SELECT YEAR &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;TO_DATE &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;202204&#39;&lt;/span&gt; + &lt;span class=&#34;token string&#34;&gt;&#39;01&#39;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#39;YYYYMMDD&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; - &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; MONTH&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; RIGHT &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;+ MONTH &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;TO_DATE &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;202204&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;01&#39;&lt;/span&gt;, &lt;span class=&#34;token string&#34;&gt;&#39;YYYYMMDD&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; - &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; MONTH&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;,2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	FROM SYSIBM.DUAL&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;授权管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权管理&#34;&gt;#&lt;/a&gt; 授权管理&lt;/h1&gt;
+&lt;h2 id=&#34;数据表授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据表授权&#34;&gt;#&lt;/a&gt; 数据表授权&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;GRANT ALTER, DELETE, INDEX, INSERT, SELECT, REFERENCES, UPDATE ON TABLE schema_name.table_name TO &lt;span class=&#34;token environment constant&#34;&gt;USER&lt;/span&gt; user_name WITH GRANT OPTION&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;函数授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数授权&#34;&gt;#&lt;/a&gt; 函数授权&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;GRANT EXECUTE ON SPECIFIC FUNCTION schema_name.function_name TO &lt;span class=&#34;token environment constant&#34;&gt;USER&lt;/span&gt; user_name WITH GRANT OPTION&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;存储过程授权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#存储过程授权&#34;&gt;#&lt;/a&gt; 存储过程授权&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;GRANT EXECUTE ON PROCEDURE schema_name.procedure_name TO &lt;span class=&#34;token environment constant&#34;&gt;USER&lt;/span&gt; user_name WITH GRANT OPTION&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;REVOKE SELECT ON schema_name.table_name FROM user_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权用户取消被授权用户的表级操作授权及被授权用户user_name给其他用户关联授予的相应权限-2&#34;&gt;#&lt;/a&gt; 授权用户取消被授权用户的表级操作授权，及被授权用户 user_name 给其他用户关联授予的相应权限&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;REVOKE SELECT ON schema_name.table_name FROM user_name CASCADE&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Linux命令速查</title>
+            <link>https://yunian.site/Note/Linux/Linux%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
+            <category term="Linux" scheme="https://yunian.site/categories/Note/Linux/" />
+            <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
+            <category term="linux" scheme="https://yunian.site/tags/linux/" />
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;文件管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件管理&#34;&gt;#&lt;/a&gt; 文件管理&lt;/h2&gt;
+&lt;p&gt;-- 删除路径下一定修改时间前的文件&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;find&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;etl&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;job&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;logs &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;mtime &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;name &lt;span class=&#34;token string&#34;&gt;&#39;*.log&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;exec rm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;rf &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; \&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注:/&#39;*.log&#39; 为日志文件后缀；+10 表示修改时间为 10 天前；&lt;/p&gt;
+&lt;h2 id=&#34;crontab定时模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crontab定时模块&#34;&gt;#&lt;/a&gt; crontab 定时模块&lt;/h2&gt;
+&lt;p&gt;前注：&lt;br&gt;
+1、远程连接时，若误使用 crontab 命令等其他导致异常的情况，需要使用 &#39;Ctrl + C&#39; 命令先退出异常；&lt;br&gt;
+ 如果直接断开远程连接，将会导致计划列表被清空。&lt;br&gt;
+2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br&gt;
+ 其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;添加定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;删除定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;r&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;显示定时计划列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;编辑定时计划内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunian.site/Note/Git/Git%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</guid>
+            <title>Git命令速查</title>
+            <link>https://yunian.site/Note/Git/Git%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</link>
+            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
+            <category term="Git" scheme="https://yunian.site/categories/Note/Git/" />
+            <category term="git" scheme="https://yunian.site/tags/git/" />
+            <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
+            <pubDate>Tue, 24 Dec 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;删除对应名称的文件文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除对应名称的文件文件夹&#34;&gt;#&lt;/a&gt; 删除对应名称的文件 / 文件夹&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--cached&lt;/span&gt; 文件/文件夹名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;提交到git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交到git&#34;&gt;#&lt;/a&gt; 提交到 git&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;提交的操作描述&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 推送到远程仓库&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://yunian.site/Hexo/5%E3%80%81%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</guid>
             <title>5、博客相关资源</title>
@@ -23,31 +125,31 @@
             <category term="图库" scheme="https://yunian.site/tags/%E5%9B%BE%E5%BA%93/" />
             <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;hexo官方&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo官方&#34;&gt;#&lt;/a&gt; Hexo 官方&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/NRv9saxqI7wJiZ8.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==&#34;&gt;Hexo官方文档&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;说明文档&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Hexo&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/NRv9saxqI7wJiZ8.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;Hexo主题仓库&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;主题仓库&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;hexo插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo插件&#34;&gt;#&lt;/a&gt; Hexo 插件&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;prismjs&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;prismjs&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/NzdwLeIvUr9THyu.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9wcmlzbWpzLmNvbS8jc3VwcG9ydGVkLWxhbmd1YWdlcw==&#34;&gt;Prismjs-代码高亮&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;Hexo插件&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;图库图床&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图库图床&#34;&gt;#&lt;/a&gt; 图库图床&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Timeless&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Timeless&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/GZJuQTekBfrRE3a.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9pbWcudGltZWxlc3NxLmNvbS9tZS8/bGlzdD1pbWFnZXMmc29ydD10aXRsZV9hc2MmcGFnZT0x&#34;&gt;Timeless漫图&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;图库&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;SM.MS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;SM.MS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/sTVAwonXQ6EZgHI.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zbW1zLmFwcC8=&#34;&gt;SM.MS图床&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;图床&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Lsky Pro&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Lsky Pro&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34; data-background-image=&#34;https://s2.loli.net/2025/01/02/dzic7SgUExwA8hf.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmxza3kucHJvLw==&#34;&gt;Lsky Pro图床&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;自建图床框架&lt;/p&gt;
@@ -1058,10 +1160,12 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXR6bi5jbi9kb3duL3BhZ2UucGhw&#34;&gt;远程开机卡&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;系统工具&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Alist&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9hbGlzdC5ubi5jaS9ndWlkZS9pbnN0YWxsL2Rlc2t0b3AuaHRtbA==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;硬件驱动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#硬件驱动&#34;&gt;#&lt;/a&gt; 硬件驱动&lt;/h1&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Colorful七彩虹&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuY29sb3JmdWwuY24vaUdhbWVDZW50ZXIvI2ZpcnN0UGFnZQ==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/2uebYCHarLZV8l1.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
-          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9hbGlzdC5ubi5jaS9ndWlkZS9pbnN0YWxsL2Rlc2t0b3AuaHRtbA==&#34;&gt;Alist&lt;/span&gt;
-          &lt;p class=&#34;desc&#34;&gt;系统工具&lt;/p&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuY29sb3JmdWwuY24vaUdhbWVDZW50ZXIvI2ZpcnN0UGFnZQ==&#34;&gt;iGameCenter&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;七彩虹硬件驱动&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -1191,27 +1295,27 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
           &lt;p class=&#34;desc&#34;&gt;服务器运维&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;前端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前端&#34;&gt;#&lt;/a&gt; 前端&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;NodeJS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMuY24vZG93bmxvYWQv&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;NodeJS&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMuY24vZG93bmxvYWQv&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMuY24vZG93bmxvYWQv&#34;&gt;NodeJS&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;JavaScript&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;api工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#api工具&#34;&gt;#&lt;/a&gt; API 工具&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Apipost&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly92Ny5hcGlwb3N0LmNuL2FwaXM/dXRtX3NvdXJjZT0xMDEyMCMvYXBpcy9ydW4=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Apipost&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly92Ny5hcGlwb3N0LmNuL2FwaXM/dXRtX3NvdXJjZT0xMDEyMCMvYXBpcy9ydW4=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly92Ny5hcGlwb3N0LmNuL2FwaXM/dXRtX3NvdXJjZT0xMDEyMCMvYXBpcy9ydW4=&#34;&gt;Apipost-在线端口测试&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;百度&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9haW0uYmFpZHUuY29tL3Byb2R1Y3Qvc2VhcmNoP3Byb2R1Y3RDYXRlZ29yeT02MDEwMCZwcm9kdWN0SW5kdXN0cnk9MzAwMTM=&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;百度&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9haW0uYmFpZHUuY29tL3Byb2R1Y3Qvc2VhcmNoP3Byb2R1Y3RDYXRlZ29yeT02MDEwMCZwcm9kdWN0SW5kdXN0cnk9MzAwMTM=&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9haW0uYmFpZHUuY29tL3Byb2R1Y3Qvc2VhcmNoP3Byb2R1Y3RDYXRlZ29yeT02MDEwMCZwcm9kdWN0SW5kdXN0cnk9MzAwMTM=&#34;&gt;百度API市场&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
-          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;开源中国&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;开源中国&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0Lw==&#34;&gt;代码工具-开源中国&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;其他工具&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;h1 id=&#34;虚拟容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟容器&#34;&gt;#&lt;/a&gt; 虚拟容器&lt;/h1&gt;
-&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Docker&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34; data-background-image=&#34;https://s2.loli.net/2023/12/16/dzQ23eGm9BCIfjc.jpg&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Docker&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34; data-background-image=&#34;https://s2.loli.net/2024/12/24/QjdMgxJUHPkAv4W.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34;&gt;Docker&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;虚拟容器&lt;/p&gt;
@@ -1286,44 +1390,13 @@ WPS 文字中，在在 &lt;code&gt;【文件】&lt;/code&gt; -&amp;gt; &lt;code&
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://yunian.site/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-            <title>Linux-系统常用命令</title>
-            <link>https://yunian.site/Note/Linux/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
-            <category term="Linux" scheme="https://yunian.site/categories/Note/Linux/" />
-            <pubDate>Tue, 09 Jul 2024 18:27:53 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;文件管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件管理&#34;&gt;#&lt;/a&gt; 文件管理&lt;/h2&gt;
-&lt;p&gt;-- 删除路径下一定修改时间前的文件&lt;/p&gt;
-&lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;find&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;etl&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;job&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;logs &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;mtime &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;name &lt;span class=&#34;token string&#34;&gt;&#39;*.log&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;exec rm &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;rf &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; \&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注:/&#39;*.log&#39; 为日志文件后缀；+10 表示修改时间为 10 天前；&lt;/p&gt;
-&lt;h2 id=&#34;crontab定时模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#crontab定时模块&#34;&gt;#&lt;/a&gt; crontab 定时模块&lt;/h2&gt;
-&lt;p&gt;前注：&lt;br&gt;
-1、远程连接时，若误使用 crontab 命令等其他导致异常的情况，需要使用 &#39;Ctrl + C&#39; 命令先退出异常；&lt;br&gt;
- 如果直接断开远程连接，将会导致计划列表被清空。&lt;br&gt;
-2、定时命令格式为 &#39;* * * * * sh [脚本文件路径 (含文件名及后缀)] [参数 1] [参数 2] ...&#39;;&lt;br&gt;
- 其中 &#39;*&#39; 的位置分别对应分、时、天、月、年的时刻。&lt;/p&gt;
-&lt;figure class=&#34;highlight vim&#34;&gt;&lt;figcaption data-lang=&#34;vim&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;添加定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;删除定时计划&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;r&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;显示定时计划列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;编辑定时计划内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;crontab &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;e&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://yunian.site/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-            <title>Git-常用命令</title>
-            <link>https://yunian.site/Note/Git/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-            <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
-            <category term="Git" scheme="https://yunian.site/categories/Note/Git/" />
-            <pubDate>Tue, 09 Jul 2024 18:27:53 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;删除对应名称的文件文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除对应名称的文件文件夹&#34;&gt;#&lt;/a&gt; 删除对应名称的文件 / 文件夹&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--cached&lt;/span&gt; 文件/文件夹名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;提交到git&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提交到git&#34;&gt;#&lt;/a&gt; 提交到 git&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;提交的操作描述&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;推送到远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送到远程仓库&#34;&gt;#&lt;/a&gt; 推送到远程仓库&lt;/h1&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://yunian.site/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-            <title>Python-环境搭建</title>
-            <link>https://yunian.site/Note/Python/Python-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+            <guid isPermalink="true">https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/</guid>
+            <title>1、Python环境</title>
+            <link>https://yunian.site/Note/Python/1%E3%80%81Python%E7%8E%AF%E5%A2%83/</link>
             <category term="开发笔记" scheme="https://yunian.site/categories/Note/" />
             <category term="Python开发" scheme="https://yunian.site/categories/Note/Python%E5%BC%80%E5%8F%91/" />
             <category term="Python" scheme="https://yunian.site/tags/Python/" />
             <category term="开发笔记" scheme="https://yunian.site/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" />
-            <category term="环境搭建" scheme="https://yunian.site/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" />
             <category term="Pycharm" scheme="https://yunian.site/tags/Pycharm/" />
             <category term="Anaconda" scheme="https://yunian.site/tags/Anaconda/" />
             <pubDate>Tue, 11 Jan 2022 11:06:45 +0800</pubDate>
